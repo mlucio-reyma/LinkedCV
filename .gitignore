@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Env
+.env*
+
+# Node/JS (if used for local tooling)
+node_modules/
+dist/
+build/
+.cache/
+
+# Misc
+*.tmp
+*.swp

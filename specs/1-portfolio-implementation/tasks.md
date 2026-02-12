@@ -46,11 +46,11 @@ LinkedCV/
 
 **Purpose**: Establish repository structure and baseline files.
 
-- [ ] T001 Create base file structure in index.html, css/styles.css, js/main.js, js/i18n.js
-- [ ] T002 [P] Create assets/images, assets/icons, assets/docs directories (placeholders)
-- [ ] T003 [P] Create lang/es.json and lang/en.json with placeholder keys for all sections
-- [ ] T004 [P] Add README.md with local dev steps and GitHub Pages deployment steps
-- [ ] T005 [P] Add .gitignore entries for OS artifacts and local tooling
+- [X] T001 Create base file structure in index.html, css/styles.css, js/main.js, js/i18n.js
+- [X] T002 [P] Create assets/images, assets/icons, assets/docs directories (placeholders)
+- [X] T003 [P] Create lang/es.json and lang/en.json with placeholder keys for all sections
+- [X] T004 [P] Add README.md with local dev steps and GitHub Pages deployment steps
+- [X] T005 [P] Add .gitignore entries for OS artifacts and local tooling
 
 **Checkpoint**: Files exist and project structure matches plan.md.
 
@@ -60,16 +60,16 @@ LinkedCV/
 
 **Purpose**: Core layout, navigation shell, i18n system, and accessibility foundations.
 
-- [ ] T006 [P] Add HTML boilerplate, meta tags, and section anchors in index.html
-- [ ] T007 [P] Define CSS variables, reset, base typography in css/styles.css
-- [ ] T008 [P] Add responsive breakpoints (320px, 768px, 1024px) in css/styles.css
-- [ ] T009 [P] Create reusable CSS components (buttons, cards, badges) in css/styles.css
-- [ ] T010 Implement base navigation structure in index.html (links to 8 sections)
-- [ ] T011 Implement smooth scroll handler (500ms ease-out) in js/main.js
-- [ ] T012 Implement language loader, switcher, localStorage, and ?lang= override in js/i18n.js
-- [ ] T013 Add global focus styles and ARIA labels for nav/buttons in index.html and css/styles.css
-- [ ] T014 Add Open Graph, canonical, and SEO meta tags in index.html
-- [ ] T015 Add print styles for PDF-friendly layout in css/styles.css
+- [X] T006 [P] Add HTML boilerplate, meta tags, and section anchors in index.html
+- [X] T007 [P] Define CSS variables, reset, base typography in css/styles.css
+- [X] T008 [P] Add responsive breakpoints (320px, 768px, 1024px) in css/styles.css
+- [X] T009 [P] Create reusable CSS components (buttons, cards, badges) in css/styles.css
+- [X] T010 Implement base navigation structure in index.html (links to 8 sections)
+- [X] T011 Implement smooth scroll handler (500ms ease-out) in js/main.js
+- [X] T012 Implement language loader, switcher, localStorage, and ?lang= override in js/i18n.js
+- [X] T013 Add global focus styles and ARIA labels for nav/buttons in index.html and css/styles.css
+- [X] T014 Add Open Graph, canonical, and SEO meta tags in index.html
+- [X] T015 Add print styles for PDF-friendly layout in css/styles.css
 
 **Checkpoint**: Navigation works, i18n baseline works, accessibility baseline in place.
 
@@ -91,14 +91,14 @@ Hero renders with photo, name, title, typing tagline; language toggle updates te
 
 ### Implementation Tasks
 
-- [ ] T020 [US1] Build Hero HTML structure (photo, name, title, tagline, CTAs) in index.html
-- [ ] T021 [US1] Add hero social links and language toggle in index.html
-- [ ] T022 [US1] Implement hero layout styling, gradient title, and CTA styles in css/styles.css
-- [ ] T023 [US1] Add typing animation for tagline (CSS/JS) in css/styles.css and js/main.js
-- [ ] T024 [US1] Implement hamburger menu toggle and close-on-click in js/main.js
-- [ ] T025 [US1] Add hero translations in lang/es.json and lang/en.json
-- [ ] T026 [US1] Wire CV download button to language selection in js/i18n.js
-- [ ] T027 [US1] Add hero image assets (WebP + JPG) in assets/images and update index.html
+- [X] T020 [US1] Build Hero HTML structure (photo, name, title, tagline, CTAs) in index.html
+- [X] T021 [US1] Add hero social links and language toggle in index.html
+- [X] T022 [US1] Implement hero layout styling, gradient title, and CTA styles in css/styles.css
+- [X] T023 [US1] Add typing animation for tagline (CSS/JS) in css/styles.css and js/main.js
+- [X] T024 [US1] Implement hamburger menu toggle and close-on-click in js/main.js
+- [X] T025 [US1] Add hero translations in lang/es.json and lang/en.json
+- [X] T026 [US1] Wire CV download button to language selection in js/i18n.js
+- [X] T027 [US1] Add hero image assets (WebP + JPG) in assets/images and update index.html
 
 **Checkpoint**: Hero is bilingual, responsive, animated, and navigable per spec.md.
 
@@ -119,49 +119,49 @@ Each section renders with correct content in ES/EN; animations trigger on scroll
 
 ### About Section
 
-- [ ] T031 [US2] Implement About HTML (summary, tech stack, values) in index.html
-- [ ] T032 [US2] Style About layout and cards in css/styles.css
-- [ ] T033 [US2] Add About translations in lang/es.json and lang/en.json
+- [X] T031 [US2] Implement About HTML (summary, tech stack, values) in index.html
+- [X] T032 [US2] Style About layout and cards in css/styles.css
+- [X] T033 [US2] Add About translations in lang/es.json and lang/en.json
 
 ### Experience Section
 
-- [ ] T034 [US2] Implement Experience HTML timeline with Microsoft/IBM/Softtek in index.html
-- [ ] T035 [US2] Style Experience timeline and tech badges in css/styles.css
-- [ ] T036 [US2] Add Experience translations in lang/es.json and lang/en.json
-- [ ] T037 [US2] Add scroll animation for experience cards in js/main.js
+- [X] T034 [US2] Implement Experience HTML timeline with Microsoft/IBM/Softtek in index.html
+- [X] T035 [US2] Style Experience timeline and tech badges in css/styles.css
+- [X] T036 [US2] Add Experience translations in lang/es.json and lang/en.json
+- [X] T037 [US2] Add scroll animation for experience cards in js/main.js
 
 ### Skills Section
 
-- [ ] T038 [US2] Implement Skills HTML with categories and bars in index.html
-- [ ] T039 [US2] Style skill bars and category layout in css/styles.css
-- [ ] T040 [US2] Animate skill bar fill on scroll in js/main.js
-- [ ] T041 [US2] Add Skills translations in lang/es.json and lang/en.json
+- [X] T038 [US2] Implement Skills HTML with categories and bars in index.html
+- [X] T039 [US2] Style skill bars and category layout in css/styles.css
+- [X] T040 [US2] Animate skill bar fill on scroll in js/main.js
+- [X] T041 [US2] Add Skills translations in lang/es.json and lang/en.json
 
 ### Education Section
 
-- [ ] T042 [US2] Implement Education HTML (degree + certifications) in index.html
-- [ ] T043 [US2] Style Education cards and layout in css/styles.css
-- [ ] T044 [US2] Add Education translations in lang/es.json and lang/en.json
+- [X] T042 [US2] Implement Education HTML (degree + certifications) in index.html
+- [X] T043 [US2] Style Education cards and layout in css/styles.css
+- [X] T044 [US2] Add Education translations in lang/es.json and lang/en.json
 
 ### Achievements Section
 
-- [ ] T045 [US2] Implement Achievements HTML with metrics in index.html
-- [ ] T046 [US2] Style Achievements grid and metric emphasis in css/styles.css
-- [ ] T047 [US2] Add Achievements translations in lang/es.json and lang/en.json
+- [X] T045 [US2] Implement Achievements HTML with metrics in index.html
+- [X] T046 [US2] Style Achievements grid and metric emphasis in css/styles.css
+- [X] T047 [US2] Add Achievements translations in lang/es.json and lang/en.json
 
 ### Projects Section
 
-- [ ] T048 [US2] Implement Projects HTML (5 cards with images/links) in index.html
-- [ ] T049 [US2] Style Projects grid, hover effects, and badges in css/styles.css
-- [ ] T050 [US2] Add Projects translations in lang/es.json and lang/en.json
-- [ ] T051 [US2] Add project images and WebP fallbacks in assets/images and index.html
+- [X] T048 [US2] Implement Projects HTML (5 cards with images/links) in index.html
+- [X] T049 [US2] Style Projects grid, hover effects, and badges in css/styles.css
+- [X] T050 [US2] Add Projects translations in lang/es.json and lang/en.json
+- [X] T051 [US2] Add project images and WebP fallbacks in assets/images and index.html
 
 ### Contact Section
 
-- [ ] T052 [US2] Implement Contact HTML (email, social links, download CV) in index.html
-- [ ] T053 [US2] Style Contact layout and footer pattern in css/styles.css
-- [ ] T054 [US2] Implement email copy-to-clipboard in js/main.js
-- [ ] T055 [US2] Add Contact translations in lang/es.json and lang/en.json
+- [X] T052 [US2] Implement Contact HTML (email, social links, download CV) in index.html
+- [X] T053 [US2] Style Contact layout and footer pattern in css/styles.css
+- [X] T054 [US2] Implement email copy-to-clipboard in js/main.js
+- [X] T055 [US2] Add Contact translations in lang/es.json and lang/en.json
 
 **Checkpoint**: All 8 sections complete, bilingual, with animations and functional links.
 
@@ -184,12 +184,12 @@ Lighthouse ≥90 all categories; WCAG 2.1 AA checks pass; FCP/LCP/CLS within lim
 
 ### Implementation Tasks
 
-- [ ] T061 [US3] Optimize images to size targets and add lazy loading in index.html and assets/images
-- [ ] T062 [US3] Add explicit width/height to images to prevent CLS in index.html
-- [ ] T063 [US3] Ensure animations use transform/opacity only in css/styles.css
-- [ ] T064 [US3] Add ARIA labels and semantic landmarks across sections in index.html
-- [ ] T065 [US3] Implement focus-visible styles and keyboard handling in css/styles.css and js/main.js
-- [ ] T066 [US3] Add service worker for offline caching (optional, safe fallback) in sw.js and js/main.js
+- [X] T061 [US3] Optimize images to size targets and add lazy loading in index.html and assets/images
+- [X] T062 [US3] Add explicit width/height to images to prevent CLS in index.html
+- [X] T063 [US3] Ensure animations use transform/opacity only in css/styles.css
+- [X] T064 [US3] Add ARIA labels and semantic landmarks across sections in index.html
+- [X] T065 [US3] Implement focus-visible styles and keyboard handling in css/styles.css and js/main.js
+- [X] T066 [US3] Add service worker for offline caching (optional, safe fallback) in sw.js and js/main.js
 - [ ] T067 [US3] Verify total asset size <2MB (document results in README.md)
 
 **Checkpoint**: Performance and accessibility targets met; offline behavior verified.
@@ -233,31 +233,6 @@ Lighthouse ≥90 all categories; WCAG 2.1 AA checks pass; FCP/LCP/CLS within lim
 
 ---
 
-## Validation Summary
-
-- All tasks follow checklist format with IDs, optional [P], and [US#] labels for story phases.
-- Each user story includes independent test criteria and manual test tasks.
-- File paths included in every implementation task.# LinkedCV Task Breakdown (tasks.md)
-
-**Created**: 2026-02-13  
-**Total Tasks**: 156  
-**Phases Covered**: 3-6 (HTML, CSS, JS, Testing, Deployment)  
-**Organized by**: Section + Category  
-
----
-
-## Sprint Overview
-
-| Sprint | Tasks | Duration | Focus |
-|--------|-------|----------|-------|
-| **Sprint 1** | 1-42 | 6-8 hours | Hero + About + Experience (HTML markup) |
-| **Sprint 2** | 43-84 | 6-8 hours | Skills + Education + Achievements + Contact (HTML markup) |
-| **Sprint 3** | 85-126 | 12 hours | CSS styling + Navigation + Core design system |
-| **Sprint 4** | 127-136 | 8 hours | JavaScript main.js functionality |
-| **Sprint 5** | 97-104 | 6 hours | i18n system + translations |
-| **Sprint 6** | 105-114 | 4 hours | Asset optimization (parallel) |
-| **Sprint 7** | 137-150 | 8 hours | Testing + Lighthouse optimization |
-| **Sprint 8** | 151-156 | 1 hour | Git + Deployment |
 
 ---
 

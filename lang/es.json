@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "description": "Portafolio profesional de Miguel Angel Lucio Reyes, Full Stack Developer con 6+ años de experiencia en Microsoft, IBM y Softtek."
+  },
+  "a11y": {
+    "skip": "Saltar al contenido principal",
+    "navLabel": "Navegación principal",
+    "menuOpen": "Abrir menú",
+    "toggleLanguage": "Cambiar idioma",
+    "copyEmail": "Copiar correo",
+    "backToTop": "Volver arriba"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "education": "Educación",
+    "achievements": "Logros",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "eyebrow": "Hola, soy",
+    "name": "Miguel Angel Lucio Reyes",
+    "title": "Full Stack Developer",
+    "location": "León, México",
+    "tagline": "Apasionado por crear soluciones escalables y transformar ideas en productos digitales de alto impacto.",
+    "downloadCV": "Descargar CV",
+    "contactCTA": "Hablemos",
+    "status": "Disponible para oportunidades"
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Perfil profesional",
+    "content": "Soy un Full Stack Developer con más de 6 años de experiencia creando productos digitales de alto impacto para Microsoft, IBM y Softtek. He liderado iniciativas de modernización, migraciones cloud y optimización de performance con enfoque en resultados medibles.",
+    "content2": "Combino liderazgo técnico con una mentalidad de negocio, impulsando equipos ágiles, automatización de despliegues y experiencias centradas en el usuario. Me apasiona diseñar arquitecturas escalables y soluciones resilientes.",
+    "highlights": "Tecnologías clave",
+    "valuesTitle": "Valores",
+    "value1": {
+      "title": "Escalabilidad",
+      "desc": "Arquitecturas preparadas para crecer con el negocio."
+    },
+    "value2": {
+      "title": "Calidad",
+      "desc": "Código limpio, pruebas y observabilidad continua."
+    },
+    "value3": {
+      "title": "Impacto",
+      "desc": "Soluciones medibles con foco en resultados."
+    }
+  },
+  "experience": {
+    "eyebrow": "Trayectoria",
+    "title": "Experiencia profesional",
+    "microsoft": {
+      "role": "Senior Full Stack Developer",
+      "company": "Microsoft México",
+      "period": "Mar 2021 - Presente",
+      "achievement1": "Reduje el tiempo de carga de aplicaciones críticas en 45%.",
+      "achievement2": "Lideré la migración de monolito a microservicios en Azure.",
+      "achievement3": "Mentoreé a 5+ developers junior y guié planes de carrera."
+    },
+    "ibm": {
+      "role": "Full Stack Developer",
+      "company": "IBM México",
+      "period": "Ene 2019 - Feb 2021",
+      "achievement1": "Construí un sistema de inventario con 10,000+ transacciones diarias.",
+      "achievement2": "Alcancé SLA de 99.9% mediante monitoreo y refactor continuo.",
+      "achievement3": "Automatización de pipelines CI/CD redujo despliegues en 35%."
+    },
+    "softtek": {
+      "role": "Software Developer",
+      "company": "Softtek",
+      "period": "Jun 2017 - Dic 2018",
+      "achievement1": "Desarrollé módulos de reportes que redujeron tiempos en 70%.",
+      "achievement2": "Diseñé APIs internas para integración de servicios financieros.",
+      "achievement3": "Migré aplicaciones legacy a ASP.NET MVC con mejoras de UX."
+    }
+  },
+  "skills": {
+    "eyebrow": "Stack",
+    "title": "Habilidades técnicas",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps",
+    "other": "Otros"
+  },
+  "education": {
+    "eyebrow": "Formación",
+    "title": "Educación y certificaciones",
+    "degree": "Ing. Sistemas Computacionales",
+    "university": "Universidad Tecnológica de León",
+    "degreeDetails": "2017 · Mención Honorífica · GPA 9.2/10",
+    "cert1": { "title": "Azure Developer Associate", "meta": "Microsoft · 2022" },
+    "cert2": { "title": "Azure Fundamentals", "meta": "Microsoft · 2021" },
+    "cert3": { "title": "AWS Cloud Practitioner", "meta": "Amazon Web Services · 2023" },
+    "cert4": { "title": "Scrum Master", "meta": "Scrum Alliance · 2020" },
+    "cert5": { "title": "ITIL Foundation", "meta": "PeopleCert · 2019" }
+  },
+  "achievements": {
+    "eyebrow": "Impacto",
+    "title": "Logros destacados",
+    "item1": { "title": "Outstanding Performance Award", "desc": "Reconocimiento en Microsoft por impacto en proyectos cloud." },
+    "item2": { "title": "Employee of the Quarter", "desc": "Premio a la excelencia técnica en IBM México." },
+    "item3": { "title": "Open Source Contributions", "desc": "Aportes en repositorios con foco en tooling y DevOps." },
+    "item4": { "title": "Mantenedor de proyectos", "desc": "Proyectos con más de 1,000 estrellas en GitHub." },
+    "item5": { "title": "Tech Speaker", "desc": "Ponente en conferencias de ingeniería y comunidades." },
+    "item6": { "title": "Mentorías", "desc": "Desarrollo de talento junior y planes de carrera." }
+  },
+  "projects": {
+    "eyebrow": "Portafolio",
+    "title": "Proyectos destacados",
+    "github": "GitHub",
+    "demo": "Demo",
+    "shophub": {
+      "desc": "Plataforma e-commerce con pagos Stripe, recomendaciones y observabilidad completa.",
+      "feature1": "Checkout con alta conversión y 99.9% de uptime.",
+      "feature2": "Catálogo dinámico con filtros inteligentes.",
+      "feature3": "Observabilidad con métricas y alertas en tiempo real."
+    },
+    "taskmaster": {
+      "desc": "Suite de productividad con sincronización local y métricas de equipos.",
+      "feature1": "Gestión de tareas con tableros personalizables.",
+      "feature2": "Sincronización offline y reportes ejecutivos.",
+      "feature3": "Integraciones con Azure Boards."
+    },
+    "connecthub": {
+      "desc": "Plataforma de comunicación en tiempo real con WebRTC y analítica de uso.",
+      "feature1": "Chats y videollamadas seguras con baja latencia.",
+      "feature2": "Escalamiento horizontal con Redis Streams.",
+      "feature3": "Dashboard de engagement para equipos remotos."
+    },
+    "fintech": {
+      "desc": "Arquitectura financiera con microservicios, resiliencia y alta disponibilidad.",
+      "feature1": "Procesamiento de pagos con latencia <200ms.",
+      "feature2": "Observabilidad con tracing distribuido.",
+      "feature3": "Cumplimiento de estándares PCI-DSS."
+    },
+    "devfolio": {
+      "desc": "Plantilla moderna para portafolios con MDX, SEO y despliegue rápido.",
+      "feature1": "Sistema de contenido en MDX con render estático.",
+      "feature2": "SEO listo con JSON-LD y Open Graph.",
+      "feature3": "Tiempo de despliegue menor a 2 minutos."
+    }
+  },
+  "contact": {
+    "eyebrow": "Conversemos",
+    "title": "Contacto",
+    "ctaTitle": "Listo para crear algo increíble",
+    "ctaText": "Estoy disponible para proyectos retadores, liderazgo técnico y colaboración global.",
+    "downloadCV": "Descargar CV",
+    "copyEmail": "Copiar correo",
+    "emailLabel": "Email",
+    "socialLabel": "Redes",
+    "locationLabel": "Ubicación",
+    "location": "León, México"
+  },
+  "footer": {
+    "tagline": "Creando experiencias digitales con impacto."
+  },
+  "toast": {
+    "copySuccess": "Correo copiado"
+  }
+}

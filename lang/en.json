@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "description": "Professional portfolio of Miguel Angel Lucio Reyes, Full Stack Developer with 6+ years of experience at Microsoft, IBM, and Softtek."
+  },
+  "a11y": {
+    "skip": "Skip to main content",
+    "navLabel": "Primary navigation",
+    "menuOpen": "Open menu",
+    "toggleLanguage": "Switch language",
+    "copyEmail": "Copy email",
+    "backToTop": "Back to top"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "education": "Education",
+    "achievements": "Achievements",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Hello, I'm",
+    "name": "Miguel Angel Lucio Reyes",
+    "title": "Full Stack Developer",
+    "location": "León, México",
+    "tagline": "Passionate about creating scalable solutions and transforming ideas into high-impact digital products.",
+    "downloadCV": "Download CV",
+    "contactCTA": "Let's talk",
+    "status": "Open to new opportunities"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Professional profile",
+    "content": "I am a Full Stack Developer with 6+ years of experience building high-impact digital products for Microsoft, IBM, and Softtek. I have led modernization initiatives, cloud migrations, and performance optimizations with measurable results.",
+    "content2": "I combine technical leadership with a business mindset, enabling agile teams, deployment automation, and user-centered experiences. I am passionate about designing scalable, resilient architectures.",
+    "highlights": "Key technologies",
+    "valuesTitle": "Values",
+    "value1": {
+      "title": "Scalability",
+      "desc": "Architectures ready to grow with the business."
+    },
+    "value2": {
+      "title": "Quality",
+      "desc": "Clean code, testing, and continuous observability."
+    },
+    "value3": {
+      "title": "Impact",
+      "desc": "Measurable solutions focused on outcomes."
+    }
+  },
+  "experience": {
+    "eyebrow": "Career",
+    "title": "Professional experience",
+    "microsoft": {
+      "role": "Senior Full Stack Developer",
+      "company": "Microsoft México",
+      "period": "Mar 2021 - Present",
+      "achievement1": "Reduced critical application load time by 45%.",
+      "achievement2": "Led monolith-to-microservices migration on Azure.",
+      "achievement3": "Mentored 5+ junior developers and guided career plans."
+    },
+    "ibm": {
+      "role": "Full Stack Developer",
+      "company": "IBM México",
+      "period": "Jan 2019 - Feb 2021",
+      "achievement1": "Built an inventory system handling 10,000+ daily transactions.",
+      "achievement2": "Achieved 99.9% SLA through monitoring and continuous refactor.",
+      "achievement3": "CI/CD automation reduced deployment time by 35%."
+    },
+    "softtek": {
+      "role": "Software Developer",
+      "company": "Softtek",
+      "period": "Jun 2017 - Dec 2018",
+      "achievement1": "Developed reporting modules that reduced processing time by 70%.",
+      "achievement2": "Designed internal APIs for financial service integrations.",
+      "achievement3": "Migrated legacy apps to ASP.NET MVC with UX improvements."
+    }
+  },
+  "skills": {
+    "eyebrow": "Stack",
+    "title": "Technical skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps",
+    "other": "Other"
+  },
+  "education": {
+    "eyebrow": "Education",
+    "title": "Education & certifications",
+    "degree": "Computer Systems Engineering",
+    "university": "Universidad Tecnológica de León",
+    "degreeDetails": "2017 · Honors Mention · GPA 9.2/10",
+    "cert1": { "title": "Azure Developer Associate", "meta": "Microsoft · 2022" },
+    "cert2": { "title": "Azure Fundamentals", "meta": "Microsoft · 2021" },
+    "cert3": { "title": "AWS Cloud Practitioner", "meta": "Amazon Web Services · 2023" },
+    "cert4": { "title": "Scrum Master", "meta": "Scrum Alliance · 2020" },
+    "cert5": { "title": "ITIL Foundation", "meta": "PeopleCert · 2019" }
+  },
+  "achievements": {
+    "eyebrow": "Impact",
+    "title": "Key achievements",
+    "item1": { "title": "Outstanding Performance Award", "desc": "Recognition at Microsoft for impact on cloud initiatives." },
+    "item2": { "title": "Employee of the Quarter", "desc": "Awarded for technical excellence at IBM México." },
+    "item3": { "title": "Open Source Contributions", "desc": "Contributions to repositories focused on tooling and DevOps." },
+    "item4": { "title": "Project Maintainer", "desc": "Maintains 3 projects with 1,000+ GitHub stars." },
+    "item5": { "title": "Tech Speaker", "desc": "Speaker at engineering conferences and communities." },
+    "item6": { "title": "Mentorships", "desc": "Coached 50+ junior developers and career plans." }
+  },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "title": "Featured projects",
+    "github": "GitHub",
+    "demo": "Demo",
+    "shophub": {
+      "desc": "E-commerce platform with Stripe payments, recommendations, and observability.",
+      "feature1": "High-conversion checkout with 99.9% uptime.",
+      "feature2": "Dynamic catalog with smart filters.",
+      "feature3": "Real-time metrics and alerting dashboards."
+    },
+    "taskmaster": {
+      "desc": "Productivity suite with local sync and team analytics.",
+      "feature1": "Task management with customizable boards.",
+      "feature2": "Offline sync and executive reports.",
+      "feature3": "Integrations with Azure Boards."
+    },
+    "connecthub": {
+      "desc": "Real-time communication platform with WebRTC and usage analytics.",
+      "feature1": "Secure chats and video calls with low latency.",
+      "feature2": "Horizontal scaling with Redis Streams.",
+      "feature3": "Engagement dashboard for remote teams."
+    },
+    "fintech": {
+      "desc": "Financial microservices architecture with resilience and high availability.",
+      "feature1": "Payment processing with sub-200ms latency.",
+      "feature2": "Distributed tracing and observability.",
+      "feature3": "PCI-DSS compliant workflows."
+    },
+    "devfolio": {
+      "desc": "Modern portfolio template with MDX, SEO, and rapid deployment.",
+      "feature1": "MDX content system with static rendering.",
+      "feature2": "SEO-ready with JSON-LD and Open Graph.",
+      "feature3": "Deployment time under 2 minutes."
+    }
+  },
+  "contact": {
+    "eyebrow": "Let's connect",
+    "title": "Contact",
+    "ctaTitle": "Ready to build something great",
+    "ctaText": "Available for challenging projects, technical leadership, and global collaboration.",
+    "downloadCV": "Download CV",
+    "copyEmail": "Copy email",
+    "emailLabel": "Email",
+    "socialLabel": "Social",
+    "locationLabel": "Location",
+    "location": "León, México"
+  },
+  "footer": {
+    "tagline": "Building digital experiences with impact."
+  },
+  "toast": {
+    "copySuccess": "Email copied"
+  }
+}

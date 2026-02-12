@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" role="img" aria-label="Miguel Angel Lucio Reyes">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="520" rx="260" fill="#0f172a"/>
+  <circle cx="260" cy="260" r="230" fill="url(#bg)" opacity="0.9"/>
+  <circle cx="260" cy="230" r="90" fill="#0f172a" opacity="0.8"/>
+  <rect x="150" y="320" width="220" height="120" rx="60" fill="#0f172a" opacity="0.8"/>
+  <text x="260" y="470" text-anchor="middle" font-size="28" font-family="Segoe UI, sans-serif" fill="#e2e8f0">Miguel Angel</text>
+</svg>

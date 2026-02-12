@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" role="img" aria-label="ShopHub">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="28" fill="#0f172a"/>
+  <rect x="40" y="40" width="720" height="440" rx="22" fill="url(#g1)" opacity="0.9"/>
+  <text x="80" y="120" font-size="42" font-family="Segoe UI, sans-serif" fill="#e2e8f0">ShopHub</text>
+  <text x="80" y="170" font-size="22" font-family="Segoe UI, sans-serif" fill="#e2e8f0">E-commerce · Stripe · AWS</text>
+</svg>

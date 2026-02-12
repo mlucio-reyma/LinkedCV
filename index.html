@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel Angel Lucio Reyes | Full Stack Developer</title>
+  <meta name="description" content="Portafolio profesional de Miguel Angel Lucio Reyes, Full Stack Developer con 6+ años de experiencia en Microsoft, IBM y Softtek.">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://malrdev.com">
+
+  <meta property="og:title" content="Miguel Angel Lucio Reyes | Full Stack Developer">
+  <meta property="og:description" content="Portafolio profesional con experiencia, proyectos destacados y CV descargable en ES/EN.">
+  <meta property="og:image" content="assets/images/profile.svg">
+  <meta property="og:url" content="https://malrdev.com">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Miguel Angel Lucio Reyes | Full Stack Developer">
+  <meta name="twitter:description" content="Portafolio profesional con experiencia, proyectos destacados y CV descargable en ES/EN.">
+  <meta name="twitter:image" content="assets/images/profile.svg">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Miguel Angel Lucio Reyes",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://malrdev.com",
+    "email": "mailto:mluccio@malrdev.com",
+    "image": "https://malrdev.com/assets/images/profile.jpg",
+    "sameAs": [
+      "https://github.com/Migueluccio",
+      "https://linkedin.com/in/Migueluccio"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "León",
+      "addressRegion": "Guanajuato",
+      "addressCountry": "MX"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Universidad Tecnológica de León"
+    },
+    "knowsAbout": [
+      "C#",
+      ".NET",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Azure",
+      "Docker",
+      "Kubernetes",
+      "SQL Server"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido principal</a>
+
+  <header class="header" role="banner">
+    <nav class="nav" aria-label="Navegación principal" data-i18n-attr="aria-label:a11y.navLabel">
+      <div class="nav__brand">
+        <span class="nav__logo">ML</span>
+        <span class="nav__name">Miguel Angel</span>
+      </div>
+      <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-action="toggle-menu" data-i18n-attr="aria-label:a11y.menuOpen">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__menu" role="list">
+        <li><a class="nav__link" href="#hero" data-i18n="nav.home">Inicio</a></li>
+        <li><a class="nav__link" href="#about" data-i18n="nav.about">Sobre Mí</a></li>
+        <li><a class="nav__link" href="#experience" data-i18n="nav.experience">Experiencia</a></li>
+        <li><a class="nav__link" href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a class="nav__link" href="#education" data-i18n="nav.education">Educación</a></li>
+        <li><a class="nav__link" href="#achievements" data-i18n="nav.achievements">Logros</a></li>
+        <li><a class="nav__link" href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a class="nav__link" href="#contact" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <button class="lang-toggle" type="button" aria-label="Cambiar idioma" data-action="toggle-language" data-i18n-attr="aria-label:a11y.toggleLanguage">
+        <span class="lang-toggle__flag" aria-hidden="true">🇪🇸</span>
+        <span class="lang-toggle__text">ES</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <section id="hero" class="hero section">
+      <div class="hero__content">
+        <div class="hero__image">
+          <img src="assets/images/profile.svg" alt="Miguel Angel Lucio Reyes" width="260" height="260" loading="eager">
+          <span class="hero__status" data-i18n="hero.status">Disponible para oportunidades</span>
+        </div>
+        <div class="hero__text">
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">Hola, soy</p>
+          <h1 class="hero__title" data-i18n="hero.name">Miguel Angel Lucio Reyes</h1>
+          <p class="hero__subtitle" data-i18n="hero.title">Full Stack Developer</p>
+          <p class="hero__location" data-i18n="hero.location">León, México</p>
+          <p class="hero__tagline" id="hero-tagline" data-i18n="hero.tagline">Apasionado por crear soluciones escalables y transformar ideas en productos digitales de alto impacto.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" data-download-cv href="assets/docs/CV_ES.pdf" download>
+              <span data-i18n="hero.downloadCV">Descargar CV</span>
+            </a>
+            <a class="btn btn--secondary" href="#contact" data-i18n="hero.contactCTA">Hablemos</a>
+          </div>
+          <div class="hero__social">
+            <a class="social-link" href="https://github.com/Migueluccio" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="assets/icons/github.svg" alt="GitHub" width="20" height="20" loading="lazy">
+              <span>GitHub</span>
+            </a>
+            <a class="social-link" href="https://linkedin.com/in/Migueluccio" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="assets/icons/linkedin.svg" alt="LinkedIn" width="20" height="20" loading="lazy">
+              <span>LinkedIn</span>
+            </a>
+            <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <img src="assets/icons/twitter.svg" alt="Twitter" width="20" height="20" loading="lazy">
+              <span>Twitter</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section--about">
+      <div class="section__header">
+        <p class="section__eyebrow" data-i18n="about.eyebrow">Sobre mí</p>
+        <h2 class="section__title" data-i18n="about.title">Perfil profesional</h2>
+      </div>
+      <div class="about__grid">
+        <article class="card about__summary">
+          <p data-i18n="about.content"></p>
+          <p data-i18n="about.content2"></p>
+        </article>
+        <article class="card about__highlights">
+          <h3 data-i18n="about.highlights">Tecnologías clave</h3>
+          <ul class="tag-list" role="list">
+            <li class="tag">C#</li>
+            <li class="tag">.NET</li>
+            <li class="tag">React</li>
+            <li class="tag">TypeScript</li>
+            <li class="tag">Node.js</li>
+            <li class="tag">Azure</li>
+            <li class="tag">Docker</li>
+            <li class="tag">SQL Server</li>
+          </ul>
+        </article>
+        <article class="card about__values">
+          <h3 data-i18n="about.valuesTitle">Valores</h3>
+          <ul class="values" role="list">
+            <li>
+              <strong data-i18n="about.value1.title">Escalabilidad</strong>
+              <span data-i18n="about.value1.desc">Arquitecturas preparadas para crecer con el negocio.</span>
+            </li>
+            <li>
+              <strong data-i18n="about.value2.title">Calidad</strong>
+              <span data-i18n="about.value2.desc">Código limpio, pruebas y observabilidad continua.</span>
+            </li>
+            <li>
+              <strong data-i18n="about.value3.title">Impacto</strong>
+              <span data-i18n="about.value3.desc">Soluciones medibles con foco en resultados.</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section section--experience">
+      <div class="section__header">
+        <p class="section__eyebrow" data-i18n="experience.eyebrow">Trayectoria</p>
+        <h2 class="section__title" data-i18n="experience.title">Experiencia profesional</h2>
+      </div>
+      <ol class="timeline" role="list">
+        <li class="timeline__item card">
+          <div class="timeline__header">
+            <h3 data-i18n="experience.microsoft.role">Senior Full Stack Developer</h3>
+            <span data-i18n="experience.microsoft.company">Microsoft México</span>
+            <span class="timeline__date" data-i18n="experience.microsoft.period">Mar 2021 - Presente</span>
+          </div>
+          <ul class="timeline__list" role="list">
+            <li data-i18n="experience.microsoft.achievement1">Reduje el tiempo de carga de aplicaciones críticas en 45%.</li>
+            <li data-i18n="experience.microsoft.achievement2">Lideré la migración de monolito a microservicios en Azure.</li>
+            <li data-i18n="experience.microsoft.achievement3">Mentoreé a 5+ developers junior y guié planes de carrera.</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">C#</span>
+            <span class="tag">.NET Core</span>
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Azure</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+          </div>
+        </li>
+        <li class="timeline__item card">
+          <div class="timeline__header">
+            <h3 data-i18n="experience.ibm.role">Full Stack Developer</h3>
+            <span data-i18n="experience.ibm.company">IBM México</span>
+            <span class="timeline__date" data-i18n="experience.ibm.period">Ene 2019 - Feb 2021</span>
+          </div>
+          <ul class="timeline__list" role="list">
+            <li data-i18n="experience.ibm.achievement1">Construí un sistema de inventario con 10,000+ transacciones diarias.</li>
+            <li data-i18n="experience.ibm.achievement2">Alcancé SLA de 99.9% mediante monitoreo y refactor continuo.</li>
+            <li data-i18n="experience.ibm.achievement3">Automatización de pipelines CI/CD redujo despliegues en 35%.</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">C#</span>
+            <span class="tag">.NET</span>
+            <span class="tag">WPF</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">Azure DevOps</span>
+          </div>
+        </li>
+        <li class="timeline__item card">
+          <div class="timeline__header">
+            <h3 data-i18n="experience.softtek.role">Software Developer</h3>
+            <span data-i18n="experience.softtek.company">Softtek</span>
+            <span class="timeline__date" data-i18n="experience.softtek.period">Jun 2017 - Dic 2018</span>
+          </div>
+          <ul class="timeline__list" role="list">
+            <li data-i18n="experience.softtek.achievement1">Desarrollé módulos de reportes que redujeron tiempos en 70%.</li>
+            <li data-i18n="experience.softtek.achievement2">Diseñé APIs internas para integración de servicios financieros.</li>
+            <li data-i18n="experience.softtek.achievement3">Migré aplicaciones legacy a ASP.NET MVC con mejoras de UX.</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">C#</span>
+            <span class="tag">.NET Framework</span>
+            <span class="tag">ASP.NET MVC</span>
+            <span class="tag">WinForms</span>
+            <span class="tag">SQL Server</span>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills" class="section section--skills">
+      <div class="section__header">
+        <p class="section__eyebrow" data-i18n="skills.eyebrow">Stack</p>
+        <h2 class="section__title" data-i18n="skills.title">Habilidades técnicas</h2>
+      </div>
+      <div class="skills__grid">
+        <article class="card skills__category">
+          <h3 data-i18n="skills.frontend">Frontend</h3>
+          <div class="skill">
+            <span class="skill__name">HTML5</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="95"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">CSS3</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="90"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">JavaScript (ES6+)</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="92"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">React</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="88"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">TypeScript</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="86"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card skills__category">
+          <h3 data-i18n="skills.backend">Backend</h3>
+          <div class="skill">
+            <span class="skill__name">C#</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="95"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">.NET Core</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="93"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">Node.js</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="85"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">SQL Server</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="90"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">REST APIs</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="88"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card skills__category">
+          <h3 data-i18n="skills.devops">DevOps</h3>
+          <div class="skill">
+            <span class="skill__name">Azure</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="90"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">Docker</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="88"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">Kubernetes</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="80"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">CI/CD</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="85"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">AWS</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="78"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card skills__category">
+          <h3 data-i18n="skills.other">Other</h3>
+          <div class="skill">
+            <span class="skill__name">WPF / WinForms</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="82"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">Python</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="76"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">GraphQL</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="72"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">Agile / Scrum</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="88"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span class="skill__name">Leadership</span>
+            <div class="skill-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar__fill" data-level="86"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section section--education">
+      <div class="section__header">
+        <p class="section__eyebrow" data-i18n="education.eyebrow">Formación</p>
+        <h2 class="section__title" data-i18n="education.title">Educación y certificaciones</h2>
+      </div>
+      <div class="education__grid">
+        <article class="card education__degree">
+          <h3 data-i18n="education.degree">Ing. Sistemas Computacionales</h3>
+          <p data-i18n="education.university">Universidad Tecnológica de León</p>
+          <p data-i18n="education.degreeDetails">2017 · Mención Honorífica · GPA 9.2/10</p>
+        </article>
+        <div class="education__certs">
+          <article class="card">
+            <h4 data-i18n="education.cert1.title">Azure Developer Associate</h4>
+            <p data-i18n="education.cert1.meta">Microsoft · 2022</p>
+          </article>
+          <article class="card">
+            <h4 data-i18n="education.cert2.title">Azure Fundamentals</h4>
+            <p data-i18n="education.cert2.meta">Microsoft · 2021</p>
+          </article>
+          <article class="card">
+            <h4 data-i18n="education.cert3.title">AWS Cloud Practitioner</h4>
+            <p data-i18n="education.cert3.meta">Amazon Web Services · 2023</p>
+          </article>
+          <article class="card">
+            <h4 data-i18n="education.cert4.title">Scrum Master</h4>
+            <p data-i18n="education.cert4.meta">Scrum Alliance · 2020</p>
+          </article>
+          <article class="card">
+            <h4 data-i18n="education.cert5.title">ITIL Foundation</h4>
+            <p data-i18n="education.cert5.meta">PeopleCert · 2019</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section section--achievements">
+      <div class="section__header">
+        <p class="section__eyebrow" data-i18n="achievements.eyebrow">Impacto</p>
+        <h2 class="section__title" data-i18n="achievements.title">Logros destacados</h2>
+      </div>
+      <div class="achievements__grid">
+        <article class="card achievement">
+          <span class="achievement__metric">2023</span>
+          <h3 data-i18n="achievements.item1.title">Outstanding Performance Award</h3>
+          <p data-i18n="achievements.item1.desc">Reconocimiento en Microsoft por impacto en proyectos cloud.</p>
+        </article>
+        <article class="card achievement">
+          <span class="achievement__metric">2020</span>
+          <h3 data-i18n="achievements.item2.title">Employee of the Quarter</h3>
+          <p data-i18n="achievements.item2.desc">Premio a la excelencia técnica en IBM México.</p>
+        </article>
+        <article class="card achievement">
+          <span class="achievement__metric">500+</span>
+          <h3 data-i18n="achievements.item3.title">Open Source Contributions</h3>
+          <p data-i18n="achievements.item3.desc">Aportes en repositorios con foco en tooling y DevOps.</p>
+        </article>
+        <article class="card achievement">
+          <span class="achievement__metric">3</span>
+          <h3 data-i18n="achievements.item4.title">Mantenedor de proyectos</h3>
+          <p data-i18n="achievements.item4.desc">Proyectos con más de 1,000 estrellas en GitHub.</p>
+        </article>
+        <article class="card achievement">
+          <span class="achievement__metric">2</span>
+          <h3 data-i18n="achievements.item5.title">Tech Speaker</h3>
+          <p data-i18n="achievements.item5.desc">Ponente en conferencias de ingeniería y comunidades.</p>
+        </article>
+        <article class="card achievement">
+          <span class="achievement__metric">50+</span>
+          <h3 data-i18n="achievements.item6.title">Mentorías</h3>
+          <p data-i18n="achievements.item6.desc">Desarrollo de talento junior y planes de carrera.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section section--projects">
+      <div class="section__header">
+        <p class="section__eyebrow" data-i18n="projects.eyebrow">Portafolio</p>
+        <h2 class="section__title" data-i18n="projects.title">Proyectos destacados</h2>
+      </div>
+      <div class="projects__grid">
+        <article class="card project">
+          <div class="project__image">
+            <img src="assets/images/project-shophub.svg" alt="ShopHub" loading="lazy" width="600" height="380">
+          </div>
+          <div class="project__content">
+            <h3>ShopHub</h3>
+            <p data-i18n="projects.shophub.desc">Plataforma e-commerce con pagos Stripe, recomendaciones y observabilidad completa.</p>
+            <div class="tag-list">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Stripe</span><span class="tag">AWS</span><span class="tag">Docker</span>
+            </div>
+            <ul class="project__features" role="list">
+              <li data-i18n="projects.shophub.feature1">Checkout con alta conversión y 99.9% de uptime.</li>
+              <li data-i18n="projects.shophub.feature2">Catálogo dinámico con filtros inteligentes.</li>
+              <li data-i18n="projects.shophub.feature3">Observabilidad con métricas y alertas en tiempo real.</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/Migueluccio" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
+              <a href="https://malrdev.com" target="_blank" rel="noopener noreferrer" data-i18n="projects.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project__image">
+            <img src="assets/images/project-taskmaster.svg" alt="TaskMaster" loading="lazy" width="600" height="380">
+          </div>
+          <div class="project__content">
+            <h3>TaskMaster</h3>
+            <p data-i18n="projects.taskmaster.desc">Suite de productividad con sincronización local y métricas de equipos.</p>
+            <div class="tag-list">
+              <span class="tag">C#</span><span class="tag">.NET 6</span><span class="tag">WPF</span><span class="tag">SQLite</span><span class="tag">Azure</span>
+            </div>
+            <ul class="project__features" role="list">
+              <li data-i18n="projects.taskmaster.feature1">Gestión de tareas con tableros personalizables.</li>
+              <li data-i18n="projects.taskmaster.feature2">Sincronización offline y reportes ejecutivos.</li>
+              <li data-i18n="projects.taskmaster.feature3">Integraciones con Azure Boards.</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/Migueluccio" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
+              <a href="https://malrdev.com" target="_blank" rel="noopener noreferrer" data-i18n="projects.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project__image">
+            <img src="assets/images/project-connecthub.svg" alt="ConnectHub" loading="lazy" width="600" height="380">
+          </div>
+          <div class="project__content">
+            <h3>ConnectHub</h3>
+            <p data-i18n="projects.connecthub.desc">Plataforma de comunicación en tiempo real con WebRTC y analítica de uso.</p>
+            <div class="tag-list">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Socket.io</span><span class="tag">WebRTC</span><span class="tag">Redis</span>
+            </div>
+            <ul class="project__features" role="list">
+              <li data-i18n="projects.connecthub.feature1">Chats y videollamadas seguras con baja latencia.</li>
+              <li data-i18n="projects.connecthub.feature2">Escalamiento horizontal con Redis Streams.</li>
+              <li data-i18n="projects.connecthub.feature3">Dashboard de engagement para equipos remotos.</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/Migueluccio" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
+              <a href="https://malrdev.com" target="_blank" rel="noopener noreferrer" data-i18n="projects.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project__image">
+            <img src="assets/images/project-fintech.svg" alt="FinTech Microservices" loading="lazy" width="600" height="380">
+          </div>
+          <div class="project__content">
+            <h3>FinTech Microservices</h3>
+            <p data-i18n="projects.fintech.desc">Arquitectura financiera con microservicios, resiliencia y alta disponibilidad.</p>
+            <div class="tag-list">
+              <span class="tag">.NET</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">RabbitMQ</span><span class="tag">PostgreSQL</span>
+            </div>
+            <ul class="project__features" role="list">
+              <li data-i18n="projects.fintech.feature1">Procesamiento de pagos con latencia <200ms.</li>
+              <li data-i18n="projects.fintech.feature2">Observabilidad con tracing distribuido.</li>
+              <li data-i18n="projects.fintech.feature3">Cumplimiento de estándares PCI-DSS.</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/Migueluccio" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
+              <a href="https://malrdev.com" target="_blank" rel="noopener noreferrer" data-i18n="projects.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project__image">
+            <img src="assets/images/project-devfolio.svg" alt="DevFolio" loading="lazy" width="600" height="380">
+          </div>
+          <div class="project__content">
+            <h3>DevFolio</h3>
+            <p data-i18n="projects.devfolio.desc">Plantilla moderna para portafolios con MDX, SEO y despliegue rápido.</p>
+            <div class="tag-list">
+              <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">MDX</span><span class="tag">Vercel</span>
+            </div>
+            <ul class="project__features" role="list">
+              <li data-i18n="projects.devfolio.feature1">Sistema de contenido en MDX con render estático.</li>
+              <li data-i18n="projects.devfolio.feature2">SEO listo con JSON-LD y Open Graph.</li>
+              <li data-i18n="projects.devfolio.feature3">Tiempo de despliegue menor a 2 minutos.</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/Migueluccio" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
+              <a href="https://malrdev.com" target="_blank" rel="noopener noreferrer" data-i18n="projects.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--contact">
+      <div class="section__header">
+        <p class="section__eyebrow" data-i18n="contact.eyebrow">Conversemos</p>
+        <h2 class="section__title" data-i18n="contact.title">Contacto</h2>
+      </div>
+      <div class="contact__grid">
+        <article class="card contact__cta">
+          <h3 data-i18n="contact.ctaTitle">Listo para crear algo increíble</h3>
+          <p data-i18n="contact.ctaText">Estoy disponible para proyectos retadores, liderazgo técnico y colaboración global.</p>
+          <div class="contact__actions">
+            <a class="btn btn--primary" data-download-cv href="assets/docs/CV_ES.pdf" download>
+              <span data-i18n="contact.downloadCV">Descargar CV</span>
+            </a>
+            <button class="btn btn--ghost" type="button" data-copy-email data-i18n-attr="aria-label:a11y.copyEmail">
+              <span data-i18n="contact.copyEmail">Copiar correo</span>
+            </button>
+          </div>
+        </article>
+        <article class="card contact__details">
+          <div class="contact__item">
+            <span data-i18n="contact.emailLabel">Email</span>
+            <a href="mailto:mluccio@malrdev.com">mluccio@malrdev.com</a>
+          </div>
+          <div class="contact__item">
+            <span data-i18n="contact.socialLabel">Redes</span>
+            <div class="contact__social">
+              <a href="https://github.com/Migueluccio" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://linkedin.com/in/Migueluccio" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span data-i18n="contact.locationLabel">Ubicación</span>
+            <span data-i18n="contact.location">León, México</span>
+          </div>
+        </article>
+      </div>
+      <footer class="footer">
+        <p data-i18n="footer.tagline">Creando experiencias digitales con impacto.</p>
+        <p>© 2026 Miguel Angel Lucio Reyes</p>
+      </footer>
+    </section>
+  </main>
+
+  <button class="back-to-top" type="button" aria-label="Volver arriba" data-action="back-to-top" data-i18n-attr="aria-label:a11y.backToTop">↑</button>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
