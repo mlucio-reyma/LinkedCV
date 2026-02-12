@@ -17,21 +17,26 @@
   the iteration process.
 -->
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: HTML5, CSS3, Vanilla JavaScript (no transpilation)  
+**Primary Dependencies**: NONE (all code is local and self-contained)  
+**Storage**: localStorage for language preference; no databases or APIs  
+**Testing**: Manual browser testing (Firefox, Chrome, Safari, Edge); Lighthouse audits  
+**Target Platform**: GitHub Pages; all modern browsers (desktop and mobile)  
+**Project Type**: Single-page static site (client-side only)  
+**Performance Goals**: FCP <1.5s, LCP <2.5s, CLS <0.1, Lighthouse >90 (all categories)  
+**Constraints**: <2MB total size, no external CDN dependencies, WCAG 2.1 AA compliance  
+**Scale/Scope**: 8 content sections, bilingual (ES/EN), PDF export, offline-capable  
+**Bilingual**: Spanish (ES) is default; English (EN) is secondary; no automated translations
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+**Principle I (Pure Static Architecture)**: All features must work without backend, APIs, databases, or build process.  
+**Principle II (Bilingual-First)**: All content MUST exist in Spanish AND English; language persists via localStorage.  
+**Principle III (Visual Excellence)**: Design must follow color palette and glassmorphism/neumorphism standards.  
+**Principle IV (Performance & Accessibility)**: Must meet Lighthouse targets and WCAG 2.1 AA.  
+**Principle V (Content Completeness)**: All 8 sections required; functional CTAs and PDF export.
 
 ## Project Structure
 
@@ -49,56 +54,49 @@ specs/[###-feature]/
 
 ### Source Code (repository root)
 <!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
+  LinkedCV Project Structure - Static Single-Page Portfolio Website
 -->
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
-
-tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+LinkedCV/
+├── index.html                 # Main HTML file (single or multi-file option)
+├── css/
+│   └── styles.css             # All CSS (variables, components, responsive)
+├── js/
+│   ├── main.js                # Core functionality (animations, interactions)
+│   └── i18n.js                # Language switching and content loading
+├── assets/
+│   ├── images/
+│   │   ├── profile.jpg        # Professional photo (optimized)
+│   │   ├── hero-bg.jpg        # Tech-themed hero background
+│   │   └── patterns/          # Subtle tech pattern backgrounds
+│   ├── icons/                 # SVG icons (social, tech stack)
+│   └── docs/
+│       ├── CV_ES.pdf          # Spanish resume (<500KB)
+│       └── CV_EN.pdf          # English resume (<500KB)
+├── lang/
+│   ├── es.json                # Spanish translations (all 8 sections)
+│   └── en.json                # English translations (all 8 sections)
+├── .github/
+│   └── workflows/             # GitHub Pages deployment (auto on main push)
+├── README.md                  # Setup, local testing, deployment instructions
+└── .gitignore                 # Standard web project ignores
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: Single HTML with modular CSS/JS for maximum portability
+and zero build dependencies. Assets organized by type. Translations in JSON files
+loaded dynamically. GitHub Pages deployment automatic on push to main.
 
 ## Complexity Tracking
 
-> **Fill ONLY if Constitution Check has violations that must be justified**
+> **LinkedCV fully complies with all Constitution principles. No violations to justify.**
 
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+| Principle | Status | Notes |
+|-----------|--------|-------|
+| Pure Static Architecture | ✅ | No backend, APIs, databases, or build tools; 100% client-side HTML/CSS/JS |
+| Bilingual-First | ✅ | Spanish (ES) default + English (EN); localStorage persistence |
+| Visual Excellence | ✅ | Design system with color palette, glassmorphism, gradient accents |
+| Performance & Accessibility | ✅ | Lighthouse targets (>90); WCAG 2.1 AA compliance; <2MB total size |
+| Content Completeness | ✅ | All 8 sections required; functional PDF export and social links |
+
+No complexity exceptions needed - project is straightforward static site.

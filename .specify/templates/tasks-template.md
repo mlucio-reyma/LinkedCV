@@ -1,251 +1,264 @@
 ---
 
-description: "Task list template for feature implementation"
+description: "Task list for LinkedCV static portfolio implementation"
 ---
 
-# Tasks: [FEATURE NAME]
+# Tasks: LinkedCV - Professional Static Portfolio
 
-**Input**: Design documents from `/specs/[###-feature-name]/`
-**Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
+**Input**: LinkedCV Constitution and Feature Specifications  
+**Prerequisites**: Constitution (required), Plan (required), Spec (required)
 
-**Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
+**Testing**: Manual browser testing and Lighthouse audits (required). Jest unit tests OPTIONAL.
 
-**Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
+**Organization**: Tasks grouped by Phase (Setup, Foundation, User Stories) then by Section.
+Each section can be implemented and deployed independently.
 
-## Format: `[ID] [P?] [Story] Description`
+## Format: `[ID] [P?] [Section] Description`
 
-- **[P]**: Can run in parallel (different files, no dependencies)
-- **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
-- Include exact file paths in descriptions
+- **[P]**: Can run in parallel (different files/sections, no dependencies)
+- **[Section]**: Which content section (Hero, About, Experience, Skills, Education, Achievements, Projects, Contact)
+- Include exact file paths
 
 ## Path Conventions
 
-- **Single project**: `src/`, `tests/` at repository root
-- **Web app**: `backend/src/`, `frontend/src/`
-- **Mobile**: `api/src/`, `ios/src/` or `android/src/`
-- Paths shown below assume single project - adjust based on plan.md structure
+```
+LinkedCV/
+├── index.html            # Single HTML file (or separate html per section if modular)
+├── css/
+│   └── styles.css        # All CSS or separate files per section
+├── js/
+│   ├── main.js           # Core functionality
+│   └── i18n.js           # Internationalization system
+├── assets/
+│   ├── images/           # Optimized profile, hero-bg, patterns
+│   ├── icons/            # SVG icons for social, tech stack
+│   └── docs/             # CV_ES.pdf, CV_EN.pdf
+├── lang/
+│   ├── es.json           # Spanish translations
+│   └── en.json           # English translations
+└── README.md             # Setup and deployment docs
+```
 
-<!-- 
-  ============================================================================
-  IMPORTANT: The tasks below are SAMPLE TASKS for illustration purposes only.
-  
-  The /speckit.tasks command MUST replace these with actual tasks based on:
-  - User stories from spec.md (with their priorities P1, P2, P3...)
-  - Feature requirements from plan.md
-  - Entities from data-model.md
-  - Endpoints from contracts/
-  
-  Tasks MUST be organized by user story so each story can be:
-  - Implemented independently
-  - Tested independently
-  - Delivered as an MVP increment
-  
-  DO NOT keep these sample tasks in the generated tasks.md file.
-  ============================================================================
--->
+## Phase 1: Project Setup & Infrastructure
 
-## Phase 1: Setup (Shared Infrastructure)
+**Purpose**: Initialize repository structure, HTML skeleton, CSS framework, and JS modules
 
-**Purpose**: Project initialization and basic structure
+- [ ] T001 Create index.html with HTML5 boilerplate, semantic structure for all 8 sections
+- [ ] T002 [P] Create css/styles.css with CSS variables (colors, fonts, breakpoints); set mobile-first base
+- [ ] T003 [P] Create js/main.js with core setup (DOM selectors, scroll listeners, event handlers)
+- [ ] T004 [P] Create js/i18n.js with language loading, switching, and localStorage persistence
+- [ ] T005 [P] Create lang/es.json with Spanish content placeholders for all 8 sections
+- [ ] T006 [P] Create lang/en.json with English content placeholders for all 8 sections
+- [ ] T007 [P] Create assets/images/ folder structure; add placeholder paths for profile, hero-bg
+- [ ] T008 [P] Create assets/icons/ folder; prepare SVG placeholders for social (GitHub, LinkedIn) and tech stack
+- [ ] T009 [P] Create assets/docs/ folder; prepare PDF placeholder paths (CV_ES.pdf, CV_EN.pdf)
+- [ ] T010 Create README.md with project overview, local testing instructions (Python/Node HTTP server), deployment steps
+- [ ] T011 Setup .gitignore for web project (node_modules if needed, OS files, local testing artifacts)
+- [ ] T012 [P] Create .github/workflows/deploy.yml for GitHub Pages automatic deployment on main push
 
-- [ ] T001 Create project structure per implementation plan
-- [ ] T002 Initialize [language] project with [framework] dependencies
-- [ ] T003 [P] Configure linting and formatting tools
-
----
-
-## Phase 2: Foundational (Blocking Prerequisites)
-
-**Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
-
-**⚠️ CRITICAL**: No user story work can begin until this phase is complete
-
-Examples of foundational tasks (adjust based on your project):
-
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
-- [ ] T007 Create base models/entities that all stories depend on
-- [ ] T008 Configure error handling and logging infrastructure
-- [ ] T009 Setup environment configuration management
-
-**Checkpoint**: Foundation ready - user story implementation can now begin in parallel
+**Checkpoint**: Project structure ready, HTML skeleton complete, CSS/JS foundation in place, language system initialized
 
 ---
 
-## Phase 3: User Story 1 - [Title] (Priority: P1) 🎯 MVP
+## Phase 2: Foundation & Core Systems
 
-**Goal**: [Brief description of what this story delivers]
+**Purpose**: Establish responsive layout, navigation, language system, and accessibility framework
 
-**Independent Test**: [How to verify this story works on its own]
+- [ ] T013 [P] Setup viewport meta tag and responsive CSS breakpoints (320px, 768px, 1024px)
+- [ ] T014 [P] Implement CSS reset and normalize styles; apply typography base (sans-serif headings, body)
+- [ ] T015 [P] Implement CSS color variables from Constitution Principle III (deep blue, electric blue, cyan, grays)
+- [ ] T016 [P] Create reusable CSS component classes (cards, badges, buttons, section headers)
+- [ ] T017 Implement smooth scroll navigation in js/main.js (scroll to section on link click, no page reload)
+- [ ] T018 Implement language switcher in HTML and js/i18n.js (toggle button + localStorage + instant content update)
+- [ ] T019 Implement mobile hamburger menu (hidden on desktop, visible on mobile <768px)
+- [ ] T020 [P] Add ARIA labels, semantic HTML tags, focus management for keyboard navigation
+- [ ] T021 [P] Add print-friendly CSS for PDF export (hide nav, adjust margins, optimize for A4)
+- [ ] T022 Setup Lighthouse testing: run audit, capture baseline Performance/Accessibility/SEO scores
+- [ ] T023 [P] Create favicon.ico and set in index.html <head>
+- [ ] T024 Add Open Graph meta tags (title, description, image) for both ES and EN in HTML
 
-### Tests for User Story 1 (OPTIONAL - only if tests requested) ⚠️
+**Checkpoint**: Responsive layout working, language system functional, accessibility baseline, all meta tags present
 
-> **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
+---
 
-- [ ] T010 [P] [US1] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T011 [P] [US1] Integration test for [user journey] in tests/integration/test_[name].py
+## Phase 3: User Story 1 - Hero Section & Navigation (Priority: P1) 🎯 MVP
+
+**Goal**: Professional first impression with name, title, photo, tagline, and main CTAs
+
+**Independent Test**: Visit homepage, see hero section render, toggle language, click links, verify smooth scroll and persistence
+
+### Tests for User Story 1 (Manual Lighthouse & Browser Testing)
+
+- [ ] T025 [P] Manual: Lighthouse audit (Performance >90, Accessibility >90, SEO >90)
+- [ ] T026 [P] Manual: Cross-browser (Chrome, Firefox, Safari, Edge) - hero renders, text visible, spacing correct
+- [ ] T027 [P] Manual: Mobile responsiveness (320px, 768px) - hero adapts, text readable, photo scales
 
 ### Implementation for User Story 1
 
-- [ ] T012 [P] [US1] Create [Entity1] model in src/models/[entity1].py
-- [ ] T013 [P] [US1] Create [Entity2] model in src/models/[entity2].py
-- [ ] T014 [US1] Implement [Service] in src/services/[service].py (depends on T012, T013)
-- [ ] T015 [US1] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T016 [US1] Add validation and error handling
-- [ ] T017 [US1] Add logging for user story 1 operations
+- [ ] T028 [P] Create Hero HTML section with: name (gradient text), title, profile photo (circular, optimized)
+- [ ] T029 [P] Add hero background image (tech pattern, low opacity 10-20%, dark overlay) in css/styles.css
+- [ ] T030 [P] Create CSS for hero layout: flexbox centering, gradient text effect, responsive font sizes
+- [ ] T031 [P] Add professional tagline with typing animation effect in js/main.js (Intersection Observer trigger)
+- [ ] T032 [P] Create "Download CV" button (prominent, gradient background, white text, download icon)
+- [ ] T033 [P] Create social link buttons (GitHub, LinkedIn) with hover glassmorphism effect
+- [ ] T034 [P] Add language toggle (flag icons 🇪🇸 🇬🇧) in hero header
+- [ ] T035 Create HTML structure for nav/menu linking to all 8 sections (smooth scroll via js/main.js)
+- [ ] T036 Add profile photo optimization: jpg/webp formats, lazy loading, alt text
+- [ ] T037 Update lang/es.json with Hero content (name, title, tagline in Spanish)
+- [ ] T038 Update lang/en.json with Hero content (name, title, tagline in English)
+- [ ] T039 Implement hero section scroll effect (parallax background shift on scroll)
+- [ ] T040 Test language toggle: switch ES ↔ EN, verify all hero text updates instantly, localStorage persists
 
-**Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
+**Checkpoint**: Hero section fully functional, bilingual, accessible, responsive, animations smooth
 
 ---
 
-## Phase 4: User Story 2 - [Title] (Priority: P2)
+## Phase 4: User Story 2 - Content Sections: About, Experience, Skills, Education (Priority: P1)
 
-**Goal**: [Brief description of what this story delivers]
+**Goal**: Complete professional narrative with structured, visually distinct sections
 
-**Independent Test**: [How to verify this story works on its own]
+**Independent Test**: Scroll through all 4 sections, verify layouts, bilingual content, interactive elements, animations on scroll
 
-### Tests for User Story 2 (OPTIONAL - only if tests requested) ⚠️
+### Tests for User Story 2 (Manual Testing)
 
-- [ ] T018 [P] [US2] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T019 [P] [US2] Integration test for [user journey] in tests/integration/test_[name].py
+- [ ] T041 [P] Manual: Scroll animations trigger (fade-in, skill bar fill) on Intersection Observer
+- [ ] T042 [P] Manual: Mobile layout (cards stack, text responsive, no overflow)
+- [ ] T043 [P] Manual: Bilingual verification (ES/EN switch, all section content updates)
 
 ### Implementation for User Story 2
 
-- [ ] T020 [P] [US2] Create [Entity] model in src/models/[entity].py
-- [ ] T021 [US2] Implement [Service] in src/services/[service].py
-- [ ] T022 [US2] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T023 [US2] Integrate with User Story 1 components (if needed)
+#### About Section
 
-**Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
+- [ ] T044 Create About HTML: professional summary (3 paragraphs), tech stack list, core values
+- [ ] T045 [P] Create About CSS: card design (subtle glassmorphism), text hierarchy, accent color highlights
+- [ ] T046 Update lang/es.json with About content
+- [ ] T047 Update lang/en.json with About content
+
+#### Experience Section
+
+- [ ] T048 Create Experience HTML: timeline layout, company cards (name, position, dates, tech tags)
+- [ ] T049 [P] Create Experience CSS: vertical timeline with gradient line, alternating card layout (desktop)
+- [ ] T050 [P] Add tech stack badges as CSS elements (background color per tech, monospace font)
+- [ ] T051 Create Experience content in lang/es.json (companies, roles, dates, tech)
+- [ ] T052 Create Experience content in lang/en.json
+- [ ] T053 Add timeline visual (gradient-bordered line, animated on scroll)
+
+#### Skills Section
+
+- [ ] T054 Create Skills HTML: categorized list (Frontend, Backend, DevOps, Other) with progress levels
+- [ ] T055 [P] Create Skills CSS: animated progress bars (fill on scroll), skill cards with proficiency badges
+- [ ] T056 [P] Implement progress bar animation in js/main.js (Intersection Observer, smooth fill 0→100%)
+- [ ] T057 Create Skills content in lang/es.json (skills per category + proficiency levels)
+- [ ] T058 Create Skills content in lang/en.json
+- [ ] T059 Add tech stack icons/logos (SVG or emoji) next to skill names
+
+#### Education Section
+
+- [ ] T060 Create Education HTML: degree cards (institution, degree, graduation date, honors)
+- [ ] T061 [P] Create Education CSS: card layout with icon/accent, responsive grid
+- [ ] T062 Create Education content in lang/es.json
+- [ ] T063 Create Education content in lang/en.json
+
+**Checkpoint**: About, Experience, Skills, Education sections complete, bilingual, animations functional, responsive
 
 ---
 
-## Phase 5: User Story 3 - [Title] (Priority: P3)
+## Phase 5: User Story 3 - Remaining Sections: Achievements, Projects, Contact (Priority: P1)
 
-**Goal**: [Brief description of what this story delivers]
+**Goal**: Complete portfolio with highlights, project portfolio, and contact/download CTAs
 
-**Independent Test**: [How to verify this story works on its own]
+**Independent Test**: View achievements, projects, contact sections; verify project links work, PDF download functions, email clickable
 
-### Tests for User Story 3 (OPTIONAL - only if tests requested) ⚠️
+### Tests for User Story 3 (Manual Testing)
 
-- [ ] T024 [P] [US3] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T025 [P] [US3] Integration test for [user journey] in tests/integration/test_[name].py
+- [ ] T064 [P] Manual: Project links (GitHub, demo) load in new tab
+- [ ] T065 [P] Manual: PDF download (both languages) completes, file size <500KB
+- [ ] T066 [P] Manual: Email mailto link opens mail client
 
 ### Implementation for User Story 3
 
-- [ ] T026 [P] [US3] Create [Entity] model in src/models/[entity].py
-- [ ] T027 [US3] Implement [Service] in src/services/[service].py
-- [ ] T028 [US3] Implement [endpoint/feature] in src/[location]/[file].py
+#### Achievements Section
 
-**Checkpoint**: All user stories should now be independently functional
+- [ ] T067 Create Achievements HTML: award/recognition cards with metrics (numbers highlighted)
+- [ ] T068 [P] Create Achievements CSS: grid layout (2-3 columns desktop, 1 mobile), accent color metrics
+- [ ] T069 Create Achievements content in lang/es.json
+- [ ] T070 Create Achievements content in lang/en.json
 
----
+#### Projects Section
 
-[Add more user story phases as needed, following the same pattern]
+- [ ] T071 Create Projects HTML: project cards (name, description, tech stack, links, screenshot placeholder)
+- [ ] T072 [P] Create Projects CSS: grid layout (2 columns desktop, 1 mobile), hover reveal more details effect
+- [ ] T073 [P] Implement card hover effect in js/main.js (smooth reveal, opacity transitions)
+- [ ] T074 Create Projects content in lang/es.json (5-6 projects, tech tags, GitHub links)
+- [ ] T075 Create Projects content in lang/en.json
+- [ ] T076 [P] Add project screenshot images (optimized, lazy loaded)
+- [ ] T077 [P] Test project links: all GitHub repos accessible, demo URLs functional
 
----
+#### Contact Section
 
-## Phase N: Polish & Cross-Cutting Concerns
+- [ ] T078 Create Contact HTML: email (mailto), social links (GitHub, LinkedIn), secondary "Download CV" button
+- [ ] T079 [P] Create Contact CSS: centered layout, icon badges with brand colors, footer pattern
+- [ ] T080 [P] Implement email copy-to-clipboard in js/main.js (click → copy → success message)
+- [ ] T081 [P] Add subtle background pattern (tech-themed, low opacity) to footer
+- [ ] T082 Create Contact content in lang/es.json
+- [ ] T083 Create Contact content in lang/en.json
+- [ ] T084 Add social link icons (SVG, brand colors): GitHub, LinkedIn
+- [ ] T085 Test email link: mailto works, social links open in new tabs
 
-**Purpose**: Improvements that affect multiple user stories
-
-- [ ] TXXX [P] Documentation updates in docs/
-- [ ] TXXX Code cleanup and refactoring
-- [ ] TXXX Performance optimization across all stories
-- [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
-- [ ] TXXX Security hardening
-- [ ] TXXX Run quickstart.md validation
-
----
-
-## Dependencies & Execution Order
-
-### Phase Dependencies
-
-- **Setup (Phase 1)**: No dependencies - can start immediately
-- **Foundational (Phase 2)**: Depends on Setup completion - BLOCKS all user stories
-- **User Stories (Phase 3+)**: All depend on Foundational phase completion
-  - User stories can then proceed in parallel (if staffed)
-  - Or sequentially in priority order (P1 → P2 → P3)
-- **Polish (Final Phase)**: Depends on all desired user stories being complete
-
-### User Story Dependencies
-
-- **User Story 1 (P1)**: Can start after Foundational (Phase 2) - No dependencies on other stories
-- **User Story 2 (P2)**: Can start after Foundational (Phase 2) - May integrate with US1 but should be independently testable
-- **User Story 3 (P3)**: Can start after Foundational (Phase 2) - May integrate with US1/US2 but should be independently testable
-
-### Within Each User Story
-
-- Tests (if included) MUST be written and FAIL before implementation
-- Models before services
-- Services before endpoints
-- Core implementation before integration
-- Story complete before moving to next priority
-
-### Parallel Opportunities
-
-- All Setup tasks marked [P] can run in parallel
-- All Foundational tasks marked [P] can run in parallel (within Phase 2)
-- Once Foundational phase completes, all user stories can start in parallel (if team capacity allows)
-- All tests for a user story marked [P] can run in parallel
-- Models within a story marked [P] can run in parallel
-- Different user stories can be worked on in parallel by different team members
+**Checkpoint**: All 8 sections complete, bilingual, interactive elements functional, links verified
 
 ---
 
-## Parallel Example: User Story 1
+## Phase 4: Polish & Optimization
 
-```bash
-# Launch all tests for User Story 1 together (if tests requested):
-Task: "Contract test for [endpoint] in tests/contract/test_[name].py"
-Task: "Integration test for [user journey] in tests/integration/test_[name].py"
+**Purpose**: Final refinements, performance optimization, accessibility verification, deployment readiness
 
-# Launch all models for User Story 1 together:
-Task: "Create [Entity1] model in src/models/[entity1].py"
-Task: "Create [Entity2] model in src/models/[entity2].py"
-```
+- [ ] T086 Image optimization: compress profile.jpg, hero-bg.jpg, project screenshots (<500px each for mobile)
+- [ ] T087 [P] WebP conversion: create WebP versions of all JPGs with fallback logic in HTML
+- [ ] T088 [P] Lazy loading: add loading="lazy" to all <img> tags and Intersection Observer for background images
+- [ ] T089 PDF optimization: ensure CV_ES.pdf and CV_EN.pdf are each <500KB (compress with Adobe/similar)
+- [ ] T090 Run final Lighthouse audit: verify all scores >90 (Performance, Accessibility, Best Practices, SEO)
+- [ ] T091 [P] Cross-browser testing: Chrome, Firefox, Safari, Edge (current versions) - full site walkthrough
+- [ ] T092 [P] Mobile responsiveness audit: 320px, 375px, 768px, 1024px - all sections reflow correctly
+- [ ] T093 Keyboard navigation audit: Tab through all interactive elements, all focus visible, logical order
+- [ ] T094 Screen reader test: VoiceOver (Mac) / NVDA (Windows) - headings, links, buttons all announced
+- [ ] T095 Bilingual content proofread: Spanish and English spelling, terminology, formatting
+- [ ] T096 Test offline access: service worker OR manual "load and disconnect" - page displays cached content
+- [ ] T097 [P] Code cleanup: remove console.log, comments cleaned, consistent formatting
+- [ ] T098 [P] CSS cleanup: no unused classes, variables properly named, BEM-like naming consistent
+- [ ] T099 Update README.md with screenshots, full setup guide, GitHub Pages deployment steps
+- [ ] T100 Final git commit and push to main → verify GitHub Pages deployment auto-triggers
+
+**Checkpoint**: All quality gates passed, site production-ready, fully tested, deployed to GitHub Pages
 
 ---
 
-## Implementation Strategy
+## Dependencies & Execution Strategy
 
-### MVP First (User Story 1 Only)
+### Sequential Prerequisites
+1. **Phase 1 → Phase 2**: Setup must complete before Foundation
+2. **Phase 2 → Phases 3/4/5**: Foundation must complete before content sections
+3. **Phases 3/4/5**: Can proceed in parallel once Foundation ready
+4. **Phase 6**: Only after Phases 3/4/5 complete
 
-1. Complete Phase 1: Setup
-2. Complete Phase 2: Foundational (CRITICAL - blocks all stories)
-3. Complete Phase 3: User Story 1
-4. **STOP and VALIDATE**: Test User Story 1 independently
-5. Deploy/demo if ready
+### Parallel Opportunities (within phases)
+- Phase 1: All [P] tasks (CSS, JS modules, lang files, asset folders) can run in parallel
+- Phase 2: All [P] tasks (CSS framework, ARIA, print styles, meta tags) can run in parallel
+- Phase 3/4/5: Different sections can be built by different team members simultaneously
+- Phase 6: Optimization tasks [P] can run in parallel (image processing, testing, code cleanup)
 
-### Incremental Delivery
-
-1. Complete Setup + Foundational → Foundation ready
-2. Add User Story 1 → Test independently → Deploy/Demo (MVP!)
-3. Add User Story 2 → Test independently → Deploy/Demo
-4. Add User Story 3 → Test independently → Deploy/Demo
-5. Each story adds value without breaking previous stories
-
-### Parallel Team Strategy
-
-With multiple developers:
-
-1. Team completes Setup + Foundational together
-2. Once Foundational is done:
-   - Developer A: User Story 1
-   - Developer B: User Story 2
-   - Developer C: User Story 3
-3. Stories complete and integrate independently
+### MVP Milestone
+- Stop after Phase 3 (Hero section) = Functional MVP (landing page + navigation)
+- Add Phase 4 = Complete content sections
+- Add Phase 5 = Full portfolio with projects
+- Phase 6 = Production polish
 
 ---
 
 ## Notes
-
-- [P] tasks = different files, no dependencies
-- [Story] label maps task to specific user story for traceability
-- Each user story should be independently completable and testable
-- Verify tests fail before implementing
-- Commit after each task or logical group
-- Stop at any checkpoint to validate story independently
-- Avoid: vague tasks, same file conflicts, cross-story dependencies that break independence
+- All tasks tied to HTML/CSS/JS specifics; NO dependencies on frameworks or build tools
+- Every phase has clear "Checkpoint" success criteria
+- [P] tasks = can parallelize; otherwise sequential dependencies noted
+- Manual testing is primary QA method; Lighthouse audits are quality gates
+- Bilingual content (es.json, en.json) updates paired with each feature implementation
+- Accessibility verified early (Phase 2) and audited thoroughly (Phase 6)
