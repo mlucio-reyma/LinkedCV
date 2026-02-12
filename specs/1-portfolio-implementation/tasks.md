@@ -1,4 +1,243 @@
-# LinkedCV Task Breakdown (tasks.md)
+---
+
+description: "Task list for LinkedCV static portfolio implementation"
+---
+
+# Tasks: LinkedCV - Professional Static Portfolio
+
+**Input**: LinkedCV Constitution and Feature Specifications  
+**Prerequisites**: Constitution (required), Plan (required), Spec (required)
+
+**Testing**: Manual browser testing and Lighthouse audits (required). Jest unit tests OPTIONAL.
+
+**Organization**: Tasks grouped by Phase (Setup, Foundation, User Stories) then by Section.  
+Each section can be implemented and deployed independently.
+
+## Format: `- [ ] [TaskID] [P?] [Story?] Description with file path`
+
+- **[P]**: Can run in parallel (different files/sections, no dependencies)
+- **[Story]**: Required only for User Story phases (US1, US2, US3)
+- Include exact file paths
+
+## Path Conventions
+
+```
+LinkedCV/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   ├── main.js
+│   └── i18n.js
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── docs/
+├── lang/
+│   ├── es.json
+│   └── en.json
+├── sw.js
+└── README.md
+```
+
+---
+
+## Phase 1: Setup (Project Initialization)
+
+**Purpose**: Establish repository structure and baseline files.
+
+- [ ] T001 Create base file structure in index.html, css/styles.css, js/main.js, js/i18n.js
+- [ ] T002 [P] Create assets/images, assets/icons, assets/docs directories (placeholders)
+- [ ] T003 [P] Create lang/es.json and lang/en.json with placeholder keys for all sections
+- [ ] T004 [P] Add README.md with local dev steps and GitHub Pages deployment steps
+- [ ] T005 [P] Add .gitignore entries for OS artifacts and local tooling
+
+**Checkpoint**: Files exist and project structure matches plan.md.
+
+---
+
+## Phase 2: Foundational (Blocking Prerequisites)
+
+**Purpose**: Core layout, navigation shell, i18n system, and accessibility foundations.
+
+- [ ] T006 [P] Add HTML boilerplate, meta tags, and section anchors in index.html
+- [ ] T007 [P] Define CSS variables, reset, base typography in css/styles.css
+- [ ] T008 [P] Add responsive breakpoints (320px, 768px, 1024px) in css/styles.css
+- [ ] T009 [P] Create reusable CSS components (buttons, cards, badges) in css/styles.css
+- [ ] T010 Implement base navigation structure in index.html (links to 8 sections)
+- [ ] T011 Implement smooth scroll handler (500ms ease-out) in js/main.js
+- [ ] T012 Implement language loader, switcher, localStorage, and ?lang= override in js/i18n.js
+- [ ] T013 Add global focus styles and ARIA labels for nav/buttons in index.html and css/styles.css
+- [ ] T014 Add Open Graph, canonical, and SEO meta tags in index.html
+- [ ] T015 Add print styles for PDF-friendly layout in css/styles.css
+
+**Checkpoint**: Navigation works, i18n baseline works, accessibility baseline in place.
+
+---
+
+## Phase 3: User Story 1 - Hero Section & Navigation (P1)
+
+**Goal**: Hero section delivers first impression, bilingual toggle, and navigation.
+
+**Independent Test Criteria**:  
+Hero renders with photo, name, title, typing tagline; language toggle updates text <200ms; smooth scroll works at 500ms; PDF download matches language; hamburger works on mobile.
+
+### Tests (Manual)
+
+- [ ] T016 [P] [US1] Verify hero renders correctly on desktop and mobile (index.html)
+- [ ] T017 [P] [US1] Verify language toggle updates hero text and persists (js/i18n.js)
+- [ ] T018 [P] [US1] Verify smooth scroll duration is 500ms ease-out (js/main.js)
+- [ ] T019 [P] [US1] Verify CV download uses correct file (assets/docs/CV_ES.pdf, CV_EN.pdf)
+
+### Implementation Tasks
+
+- [ ] T020 [US1] Build Hero HTML structure (photo, name, title, tagline, CTAs) in index.html
+- [ ] T021 [US1] Add hero social links and language toggle in index.html
+- [ ] T022 [US1] Implement hero layout styling, gradient title, and CTA styles in css/styles.css
+- [ ] T023 [US1] Add typing animation for tagline (CSS/JS) in css/styles.css and js/main.js
+- [ ] T024 [US1] Implement hamburger menu toggle and close-on-click in js/main.js
+- [ ] T025 [US1] Add hero translations in lang/es.json and lang/en.json
+- [ ] T026 [US1] Wire CV download button to language selection in js/i18n.js
+- [ ] T027 [US1] Add hero image assets (WebP + JPG) in assets/images and update index.html
+
+**Checkpoint**: Hero is bilingual, responsive, animated, and navigable per spec.md.
+
+---
+
+## Phase 4: User Story 2 - Complete Content Display (P1)
+
+**Goal**: All 8 sections render with bilingual content, layouts, and scroll animations.
+
+**Independent Test Criteria**:  
+Each section renders with correct content in ES/EN; animations trigger on scroll; skill bars animate; project links open in new tabs; contact copy-to-clipboard works.
+
+### Tests (Manual)
+
+- [ ] T028 [P] [US2] Verify all sections render and scroll animations trigger (index.html, js/main.js)
+- [ ] T029 [P] [US2] Verify bilingual content updates across all sections (lang/*.json)
+- [ ] T030 [P] [US2] Verify project links open in new tabs and email copy works (js/main.js)
+
+### About Section
+
+- [ ] T031 [US2] Implement About HTML (summary, tech stack, values) in index.html
+- [ ] T032 [US2] Style About layout and cards in css/styles.css
+- [ ] T033 [US2] Add About translations in lang/es.json and lang/en.json
+
+### Experience Section
+
+- [ ] T034 [US2] Implement Experience HTML timeline with Microsoft/IBM/Softtek in index.html
+- [ ] T035 [US2] Style Experience timeline and tech badges in css/styles.css
+- [ ] T036 [US2] Add Experience translations in lang/es.json and lang/en.json
+- [ ] T037 [US2] Add scroll animation for experience cards in js/main.js
+
+### Skills Section
+
+- [ ] T038 [US2] Implement Skills HTML with categories and bars in index.html
+- [ ] T039 [US2] Style skill bars and category layout in css/styles.css
+- [ ] T040 [US2] Animate skill bar fill on scroll in js/main.js
+- [ ] T041 [US2] Add Skills translations in lang/es.json and lang/en.json
+
+### Education Section
+
+- [ ] T042 [US2] Implement Education HTML (degree + certifications) in index.html
+- [ ] T043 [US2] Style Education cards and layout in css/styles.css
+- [ ] T044 [US2] Add Education translations in lang/es.json and lang/en.json
+
+### Achievements Section
+
+- [ ] T045 [US2] Implement Achievements HTML with metrics in index.html
+- [ ] T046 [US2] Style Achievements grid and metric emphasis in css/styles.css
+- [ ] T047 [US2] Add Achievements translations in lang/es.json and lang/en.json
+
+### Projects Section
+
+- [ ] T048 [US2] Implement Projects HTML (5 cards with images/links) in index.html
+- [ ] T049 [US2] Style Projects grid, hover effects, and badges in css/styles.css
+- [ ] T050 [US2] Add Projects translations in lang/es.json and lang/en.json
+- [ ] T051 [US2] Add project images and WebP fallbacks in assets/images and index.html
+
+### Contact Section
+
+- [ ] T052 [US2] Implement Contact HTML (email, social links, download CV) in index.html
+- [ ] T053 [US2] Style Contact layout and footer pattern in css/styles.css
+- [ ] T054 [US2] Implement email copy-to-clipboard in js/main.js
+- [ ] T055 [US2] Add Contact translations in lang/es.json and lang/en.json
+
+**Checkpoint**: All 8 sections complete, bilingual, with animations and functional links.
+
+---
+
+## Phase 5: User Story 3 - Performance, Accessibility & Cross-Browser (P1)
+
+**Goal**: Meet Lighthouse targets, accessibility standards, and offline behavior.
+
+**Independent Test Criteria**:  
+Lighthouse ≥90 all categories; WCAG 2.1 AA checks pass; FCP/LCP/CLS within limits; cross-browser consistent; offline after initial load.
+
+### Tests (Manual)
+
+- [ ] T056 [P] [US3] Run Lighthouse audits (Performance, Accessibility, Best Practices, SEO) and capture scores
+- [ ] T057 [P] [US3] Verify responsive layouts at 320px, 768px, 1024px (no overflow)
+- [ ] T058 [P] [US3] Verify keyboard navigation and focus states across all controls
+- [ ] T059 [P] [US3] Verify cross-browser rendering (Chrome, Firefox, Safari, Edge)
+- [ ] T060 [P] [US3] Verify offline behavior after initial load (DevTools offline)
+
+### Implementation Tasks
+
+- [ ] T061 [US3] Optimize images to size targets and add lazy loading in index.html and assets/images
+- [ ] T062 [US3] Add explicit width/height to images to prevent CLS in index.html
+- [ ] T063 [US3] Ensure animations use transform/opacity only in css/styles.css
+- [ ] T064 [US3] Add ARIA labels and semantic landmarks across sections in index.html
+- [ ] T065 [US3] Implement focus-visible styles and keyboard handling in css/styles.css and js/main.js
+- [ ] T066 [US3] Add service worker for offline caching (optional, safe fallback) in sw.js and js/main.js
+- [ ] T067 [US3] Verify total asset size <2MB (document results in README.md)
+
+**Checkpoint**: Performance and accessibility targets met; offline behavior verified.
+
+---
+
+## Final Phase: Polish & Cross-Cutting Concerns
+
+**Purpose**: Final cleanup, documentation, and release readiness.
+
+- [ ] T068 [P] Clean up unused CSS/JS and remove debug logs in css/styles.css and js/main.js
+- [ ] T069 [P] Add final README.md updates: features, testing results, Lighthouse scores
+- [ ] T070 [P] Verify PDF files <500KB and metadata present in assets/docs
+- [ ] T071 Run final full-site manual test pass (all stories)
+
+**Checkpoint**: Ready for deployment with documented results.
+
+---
+
+## Dependencies (User Story Order)
+
+1. **US1 → US2 → US3** (Hero & Nav enables core UX, content sections build on layout, performance/accessibility validates final output)
+
+---
+
+## Parallel Execution Examples (per User Story)
+
+- **US1**: T020 (Hero HTML) and T022 (Hero CSS) can proceed in parallel after T006–T009.
+- **US2**: About/Education/Projects tasks can be done in parallel (T031, T042, T048) with separate CSS blocks.
+- **US3**: Lighthouse audits (T056) can run in parallel with image optimization (T061) and ARIA updates (T064).
+
+---
+
+## Implementation Strategy (MVP First)
+
+1. Complete Phase 1–2 to establish foundation.
+2. Deliver **US1** as MVP (Hero + Navigation + i18n + CV download).
+3. Implement **US2** to complete all required sections.
+4. Execute **US3** to meet performance, accessibility, and cross-browser requirements.
+5. Final polish and documentation updates.
+
+---
+
+## Validation Summary
+
+- All tasks follow checklist format with IDs, optional [P], and [US#] labels for story phases.
+- Each user story includes independent test criteria and manual test tasks.
+- File paths included in every implementation task.# LinkedCV Task Breakdown (tasks.md)
 
 **Created**: 2026-02-13  
 **Total Tasks**: 156  
