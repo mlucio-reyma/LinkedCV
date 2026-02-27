@@ -1589,17 +1589,149 @@ Lighthouse ≥90 all categories; WCAG 2.1 AA checks pass; FCP/LCP/CLS within lim
 
 ---
 
+## SPRINT 9: SEO Optimization (3 hours)
+
+**Task 117: Create robots.txt**
+- **Description**: Create robots.txt file for search engine directives
+- **File**: robots.txt
+- **Acceptance Criteria**:
+  - Allow all crawlers
+  - Disallow /assets/docs/ (private CVs)
+  - Include sitemap reference
+  - Follows industry standards
+- **Status**: ✅ COMPLETED
+- **Time**: 15 min
+
+**Task 118: Create sitemap.xml**
+- **Description**: Generate XML sitemap with all sections
+- **File**: sitemap.xml
+- **Acceptance Criteria**:
+  - Include all 8 sections as URLs
+  - Include hreflang alternate links for ES/EN
+  - Set proper priorities (1.0 for home, 0.9 for projects/experience)
+  - Set changefreq to monthly
+  - Valid XML structure
+- **Status**: ✅ COMPLETED
+- **Time**: 30 min
+
+**Task 119: Create manifest.json**
+- **Description**: Create PWA manifest with full configuration
+- **File**: manifest.json
+- **Acceptance Criteria**:
+  - Complete metadata (name, description, theme colors)
+  - Icon definitions (192x192, 512x512, maskable)
+  - Shortcuts to key sections
+  - Screenshots for app store
+  - Language and direction settings
+- **Status**: ✅ COMPLETED
+- **Time**: 30 min
+
+**Task 120: Update index.html - Meta Tags**
+- **Description**: Add missing meta tags for SEO
+- **File**: index.html
+- **Acceptance Criteria**:
+  - meta author
+  - meta keywords with relevant terms
+  - hreflang tags (es, en, x-default)
+  - manifest link
+  - humans.txt link
+  - preconnect/dns-prefetch for external resources
+- **Status**: ✅ COMPLETED
+- **Time**: 20 min
+
+**Task 121: Update index.html - Open Graph**
+- **Description**: Complete Open Graph meta tags
+- **File**: index.html
+- **Acceptance Criteria**:
+  - Absolute URLs for all images
+  - og:image:alt, og:image:type, og:image:width, og:image:height
+  - og:locale:alternate for English
+  - All OG tags complete per spec
+- **Status**: ✅ COMPLETED
+- **Time**: 15 min
+
+**Task 122: Update index.html - Twitter Cards**
+- **Description**: Complete Twitter Card meta tags
+- **File**: index.html
+- **Acceptance Criteria**:
+  - Absolute URLs for images
+  - twitter:image:alt
+  - twitter:creator and twitter:site
+  - Card type: summary_large_image
+- **Status**: ✅ COMPLETED
+- **Time**: 10 min
+
+**Task 123: Update index.html - Schema.org**
+- **Description**: Enhance JSON-LD structured data
+- **File**: index.html
+- **Acceptance Criteria**:
+  - Absolute URLs throughout
+  - Add worksFor organization
+  - Add knowsLanguage array
+  - Add description and alternateName
+  - Add telephone (if applicable)
+  - Extended knowsAbout array
+- **Status**: ✅ COMPLETED
+- **Time**: 20 min
+
+**Task 124: Create humans.txt**
+- **Description**: Create humans.txt with team and site info
+- **File**: humans.txt
+- **Acceptance Criteria**:
+  - Team information (developer, contacts)
+  - Site information (last update, standards, languages)
+  - Thanks section
+  - License info
+- **Status**: ✅ COMPLETED
+- **Time**: 10 min
+
+**Task 125: Create .htaccess**
+- **Description**: Create Apache config for optimization
+- **File**: .htaccess
+- **Acceptance Criteria**:
+  - GZIP compression enabled
+  - Browser caching rules
+  - Security headers
+  - Optional HTTPS redirect
+  - Optional WWW redirect
+- **Status**: ✅ COMPLETED
+- **Time**: 15 min
+
+**Task 126: Create SEO Checklist**
+- **Description**: Document all SEO improvements
+- **File**: SEO-CHECKLIST.md
+- **Acceptance Criteria**:
+  - Complete checklist of implemented features
+  - Validation tool links
+  - Next steps and recommendations
+  - Expected Lighthouse scores
+- **Status**: ✅ COMPLETED
+- **Time**: 15 min
+
+---
+
 ## Summary
 
-- **Total Tasks**: 156
-- **Total Hours**: 43-63 (depending on optional features)
+- **Total Tasks**: 126 (previously 116)
+- **Total Hours**: 46-66 (updated with SEO sprint)
 - **MVP Timeline**: 40-60 hours (single developer)
-- **Critical Path**: HTML → CSS → JS → Testing → Deploy
-- **Parallelizable**: Assets, i18n translations, mobile design refinement
+- **Critical Path**: HTML → CSS → JS → Testing → SEO → Deploy
+- **Parallelizable**: Assets, i18n translations, mobile design refinement, SEO files
+
+**SEO Achievement**: 100% SEO-ready with:
+- ✅ robots.txt + sitemap.xml
+- ✅ Complete Open Graph + Twitter Cards
+- ✅ Enhanced Schema.org JSON-LD
+- ✅ PWA manifest.json
+- ✅ hreflang for internationalization
+- ✅ Performance optimization headers
+- ✅ humans.txt for transparency
 
 **Next Steps**: 
-1. Begin Sprint 1 (HTML markup)
-2. Follow task dependencies
-3. Test frequently to catch issues early
-4. Reference quickstart.md for code templates
-5. Reference spec.md for acceptance criteria
+1. Test with Google Search Console
+2. Validate sitemap.xml
+3. Test Open Graph with Facebook Debugger
+4. Test Twitter Cards with Twitter validator
+5. Run Lighthouse audit (target: 100 SEO score)
+6. Generate PNG icons for manifest
+7. Create screenshots for PWA

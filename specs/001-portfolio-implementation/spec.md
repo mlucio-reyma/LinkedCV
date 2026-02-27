@@ -156,6 +156,14 @@ or WebPageTest.com; should be <1.5s and <2.5s respectively.
 - **FR-018**: Site MUST include meta tags (title, description, Open Graph for both languages, viewport, canonical URL)
 - **FR-019**: Site MUST work offline after initial load (CSS/JS cached); if using service worker, must be optional and fallback-friendly
 - **FR-020**: Total site size (HTML, CSS, JS, images, PDFs) MUST be <2MB; no external CDN dependencies; all assets local
+- **FR-021**: Site MUST include robots.txt file with proper crawl directives and sitemap reference
+- **FR-022**: Site MUST include sitemap.xml with all sections, hreflang alternates, and proper priorities
+- **FR-023**: Site MUST include manifest.json for Progressive Web App functionality with icons, shortcuts, and metadata
+- **FR-024**: Meta tags MUST include author, keywords, hreflang tags (es, en, x-default), and preconnect/dns-prefetch for optimization
+- **FR-025**: Open Graph tags MUST use absolute URLs for all images and include complete metadata (image:alt, image:type, image:width, image:height, locale:alternate)
+- **FR-026**: Twitter Card tags MUST use absolute URLs and include image:alt, creator, and site metadata
+- **FR-027**: Schema.org JSON-LD MUST use absolute URLs and include extended properties (worksFor, knowsLanguage, description, alternateName)
+- **FR-028**: Site MUST include humans.txt for transparency and .htaccess for Apache server optimization (GZIP, caching, security headers)
 
 ### Key Entities
 
@@ -182,6 +190,10 @@ or WebPageTest.com; should be <1.5s and <2.5s respectively.
 - **SC-008**: W3C HTML5 validation passes (no errors); W3C CSS3 validation passes (no critical errors); no JavaScript console errors on initial page load
 - **SC-009**: Cross-browser compatibility verified: Chrome, Firefox, Safari, Edge (latest 2 versions); visual consistency and functionality identical across browsers
 - **SC-010**: Accessibility WCAG 2.1 AA: semantic HTML used throughout, ARIA labels on dynamic content, color contrast ≥4.5:1 for all text, keyboard navigation complete, alt text on all images, screen reader support verified
+- **SC-011**: SEO optimization complete: robots.txt present with sitemap reference; sitemap.xml includes all sections with hreflang alternates; manifest.json configured for PWA; humans.txt created
+- **SC-012**: Meta tags complete: author, keywords, hreflang (es/en/x-default), preconnect/dns-prefetch; Open Graph with absolute URLs and complete metadata; Twitter Cards with absolute URLs
+- **SC-013**: Schema.org JSON-LD enhanced with absolute URLs, worksFor, knowsLanguage, and extended properties
+- **SC-014**: Target Lighthouse SEO score: 100/100 (perfect score with all optimizations implemented)
 
 ### Assumptions
 

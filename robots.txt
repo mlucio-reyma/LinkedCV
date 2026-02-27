@@ -1,0 +1,11 @@
+# robots.txt para LinkedCV Portfolio
+# Permitir acceso a todos los motores de búsqueda
+
+User-agent: *
+Allow: /
+
+# Archivos y directorios que no deben indexarse
+Disallow: /assets/docs/
+
+# Sitemap
+Sitemap: https://malrdev.com/sitemap.xml

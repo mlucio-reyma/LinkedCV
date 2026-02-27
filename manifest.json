@@ -1,0 +1,83 @@
+{
+  "name": "LinkedCV - Miguel Angel Lucio Reyes",
+  "short_name": "LinkedCV",
+  "description": "Portafolio profesional de Miguel Angel Lucio Reyes, Full Stack Developer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es-MX",
+  "dir": "ltr",
+  "categories": ["portfolio", "business", "productivity"],
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "assets/images/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Experiencia",
+      "short_name": "Experiencia",
+      "description": "Ver experiencia profesional",
+      "url": "/#experience",
+      "icons": [{ "src": "assets/icons/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Proyectos",
+      "short_name": "Proyectos",
+      "description": "Ver proyectos destacados",
+      "url": "/#projects",
+      "icons": [{ "src": "assets/icons/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Contacto",
+      "short_name": "Contacto",
+      "description": "Información de contacto",
+      "url": "/#contact",
+      "icons": [{ "src": "assets/icons/favicon.svg", "sizes": "any" }]
+    }
+  ]
+}

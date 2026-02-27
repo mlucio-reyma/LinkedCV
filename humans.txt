@@ -1,0 +1,32 @@
+/* TEAM */
+
+Developer: Miguel Angel Lucio Reyes
+Site: https://malrdev.com
+Location: León, Guanajuato, México
+Email: mluccio@malrdev.com
+GitHub: https://github.com/Migueluccio
+LinkedIn: https://linkedin.com/in/Migueluccio
+
+/* SITE */
+
+Last update: 2026/02/27
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: Vanilla JS, Service Worker, PWA
+Software: VS Code, Git, GitHub Pages
+Languages: Spanish (ES), English (EN)
+Doctype: HTML5
+IDE: Visual Studio Code
+
+/* THANKS */
+
+Open Source Community
+Stack Overflow
+MDN Web Docs
+Google Lighthouse
+WCAG Guidelines
+Schema.org
+
+/* LICENSE */
+
+MIT License
+Copyright (c) 2026 Miguel Angel Lucio Reyes
