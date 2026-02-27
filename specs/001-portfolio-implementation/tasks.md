@@ -1671,7 +1671,8 @@ Lighthouse ≥90 all categories; WCAG 2.1 AA checks pass; FCP/LCP/CLS within lim
   - Add description and alternateName
   - Add telephone (if applicable)
   - Extended knowsAbout array
-- **Status**: ✅ COMPLETED
+  - Add hasCredential with certifications (Azure, AWS, Scrum, ITIL)
+- **Status**: ✅ COMPLETED (Updated 2026-02-27 with hasCredential)
 - **Time**: 20 min
 
 **Task 124: Create humans.txt**
@@ -1719,13 +1720,22 @@ Lighthouse ≥90 all categories; WCAG 2.1 AA checks pass; FCP/LCP/CLS within lim
 - **Parallelizable**: Assets, i18n translations, mobile design refinement, SEO files
 
 **SEO Achievement**: 100% SEO-ready with:
-- ✅ robots.txt + sitemap.xml
-- ✅ Complete Open Graph + Twitter Cards
-- ✅ Enhanced Schema.org JSON-LD
+- ✅ robots.txt + sitemap.xml (Updated URLs to GitHub Pages 2026-02-27)
+- ✅ Complete Open Graph + Twitter Cards (Updated with GitHub Pages URLs)
+- ✅ Enhanced Schema.org JSON-LD with hasCredential for certifications
 - ✅ PWA manifest.json
 - ✅ hreflang for internationalization
 - ✅ Performance optimization headers
 - ✅ humans.txt for transparency
+- ✅ Meta keywords optimized with key technologies
+- ✅ og:type updated to "profile" for personal branding
+
+**Latest Updates (2026-02-27)**:
+- URLs actualizadas a https://mlucio-reyma.github.io/LinkedCV/
+- Añadidas certificaciones en Schema.org (Azure, AWS, Scrum, ITIL)
+- Meta description optimizada con ubicación (León, México)
+- Open Graph type cambiado a "profile" para mejor indexación de perfil profesional
+- GitHub URL actualizada en sameAs array
 
 **Next Steps**: 
 1. Test with Google Search Console

@@ -8,4 +8,4 @@ Allow: /
 Disallow: /assets/docs/
 
 # Sitemap
-Sitemap: https://malrdev.com/sitemap.xml
+Sitemap: https://mlucio-reyma.github.io/LinkedCV/sitemap.xml

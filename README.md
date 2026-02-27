@@ -50,25 +50,34 @@ LinkedCV/
 
 ## SEO Optimization ⭐
 
-El sitio está **100% optimizado para SEO** con:
+El sitio está **100% optimizado para SEO** con las últimas actualizaciones (27-Feb-2026):
 
 ### Meta Tags Completos
 - Title, description, author, keywords
-- Canonical URL y hreflang (ES/EN)
-- Open Graph completo con URLs absolutas
+- Canonical URL: `https://mlucio-reyma.github.io/LinkedCV/`
+- hreflang (ES/EN) para SEO internacional
+- Open Graph completo con URLs absolutas de GitHub Pages
 - Twitter Cards con metadata completa
 - Preconnect y DNS-prefetch
 
 ### Datos Estructurados
 - Schema.org JSON-LD (Person type)
+- **Nuevo**: hasCredential con certificaciones (Azure, AWS, Scrum, ITIL)
 - URLs absolutas en todas las propiedades
-- Información extendida (worksFor, knowsLanguage)
+- Información extendida (worksFor, knowsLanguage, knowsAbout)
+- GitHub URL actualizada en sameAs array
 
 ### Archivos SEO Esenciales
-- **robots.txt**: Directivas de rastreo y referencia a sitemap
-- **sitemap.xml**: Todas las secciones con prioridades y hreflang
+- **robots.txt**: Directivas de rastreo y referencia a sitemap (URL GitHub Pages)
+- **sitemap.xml**: Todas las secciones con prioridades y hreflang (URLs actualizadas)
 - **manifest.json**: PWA con iconos, shortcuts y screenshots
 - **humans.txt**: Información de desarrollo y agradecimientos
+
+### Open Graph Optimizado
+- `og:type`: "profile" (optimizado para perfil profesional)
+- `og:description`: Incluye ubicación (León, México) y experiencia
+- `og:locale`: es_MX con alternativa en_US
+- Imágenes con dimensiones especificadas
 
 ### Optimización de Rendimiento
 - Service Worker para caché
@@ -81,6 +90,13 @@ El sitio está **100% optimizado para SEO** con:
 - **Performance**: 95-100
 - **Accessibility**: 95-100
 - **Best Practices**: 95-100
+
+### Últimas Actualizaciones SEO (27-Feb-2026)
+✅ URLs migradas a GitHub Pages: `https://mlucio-reyma.github.io/LinkedCV/`  
+✅ Certificaciones profesionales añadidas en JSON-LD  
+✅ Meta description optimizada con geolocalización  
+✅ Open Graph type actualizado a "profile"  
+✅ Keywords reorganizadas por relevancia
 
 ## Instalación local
 

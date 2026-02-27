@@ -4,18 +4,18 @@
   
   <!-- Página principal -->
   <url>
-    <loc>https://malrdev.com/</loc>
+    <loc>https://mlucio-reyma.github.io/LinkedCV/</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://malrdev.com/?lang=es" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://malrdev.com/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://malrdev.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mlucio-reyma.github.io/LinkedCV/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mlucio-reyma.github.io/LinkedCV/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mlucio-reyma.github.io/LinkedCV/" />
   </url>
   
   <!-- Sección Hero -->
   <url>
-    <loc>https://malrdev.com/#hero</loc>
+    <loc>https://mlucio-reyma.github.io/LinkedCV/#hero</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -23,7 +23,7 @@
   
   <!-- Sección Sobre Mí -->
   <url>
-    <loc>https://malrdev.com/#about</loc>
+    <loc>https://mlucio-reyma.github.io/LinkedCV/#about</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -31,7 +31,7 @@
   
   <!-- Sección Experiencia -->
   <url>
-    <loc>https://malrdev.com/#experience</loc>
+    <loc>https://mlucio-reyma.github.io/LinkedCV/#experience</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -39,7 +39,7 @@
   
   <!-- Sección Habilidades -->
   <url>
-    <loc>https://malrdev.com/#skills</loc>
+    <loc>https://mlucio-reyma.github.io/LinkedCV/#skills</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -47,7 +47,7 @@
   
   <!-- Sección Educación -->
   <url>
-    <loc>https://malrdev.com/#education</loc>
+    <loc>https://mlucio-reyma.github.io/LinkedCV/#education</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -55,7 +55,7 @@
   
   <!-- Sección Logros -->
   <url>
-    <loc>https://malrdev.com/#achievements</loc>
+    <loc>https://mlucio-reyma.github.io/LinkedCV/#achievements</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -63,7 +63,7 @@
   
   <!-- Sección Proyectos -->
   <url>
-    <loc>https://malrdev.com/#projects</loc>
+    <loc>https://mlucio-reyma.github.io/LinkedCV/#projects</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -71,7 +71,7 @@
   
   <!-- Sección Contacto -->
   <url>
-    <loc>https://malrdev.com/#contact</loc>
+    <loc>https://mlucio-reyma.github.io/LinkedCV/#contact</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
