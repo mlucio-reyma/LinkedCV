@@ -352,7 +352,7 @@ function setupEventListeners() {
   // Email copy-to-clipboard
   const emailBtn = document.querySelector('[data-action="copy-email"]');
   emailBtn?.addEventListener('click', async () => {
-    await navigator.clipboard.writeText('mluccio@malrdev.com');
+    await navigator.clipboard.writeText('contacto@codebylucio.dev');
     alert('Email copied to clipboard!');
   });
 
@@ -470,7 +470,7 @@ document.addEventListener('DOMContentLoaded', () => I18N.init());
   "achievements.title": "Logros",
   "projects.title": "Proyectos",
   "contact.title": "Contacto",
-  "contact.email": "mluccio@malrdev.com",
+  "contact.email": "contacto@codebylucio.dev",
   
   "nav.home": "Inicio",
   "nav.about": "Acerca",
@@ -508,7 +508,7 @@ document.addEventListener('DOMContentLoaded', () => I18N.init());
   "achievements.title": "Achievements",
   "projects.title": "Projects",
   "contact.title": "Contact",
-  "contact.email": "mluccio@malrdev.com",
+  "contact.email": "contacto@codebylucio.dev",
   
   "nav.home": "Home",
   "nav.about": "About",

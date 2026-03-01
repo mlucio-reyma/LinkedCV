@@ -154,7 +154,21 @@
     "emailLabel": "Email",
     "socialLabel": "Social",
     "locationLabel": "Location",
-    "location": "León, México"
+    "location": "León, México",
+    "formTitle": "Send me a message",
+    "formName": "Name",
+    "formNamePlaceholder": "Your full name",
+    "formEmail": "Email address",
+    "formEmailPlaceholder": "you@email.com",
+    "formSubject": "Subject",
+    "formSubjectPlaceholder": "How can I help you?",
+    "formMessage": "Message",
+    "formMessagePlaceholder": "Tell me about your project...",
+    "formSubmit": "Send message",
+    "formSending": "Sending...",
+    "formSuccess": "Message sent! I'll get back to you soon.",
+    "formError": "Failed to send. Please try again.",
+    "formValidation": "Please fill in all fields."
   },
   "footer": {
     "tagline": "Building digital experiences with impact."

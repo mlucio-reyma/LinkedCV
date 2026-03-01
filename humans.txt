@@ -3,7 +3,7 @@
 Developer: Miguel Angel Lucio Reyes
 Site: https://malrdev.com
 Location: León, Guanajuato, México
-Email: mluccio@malrdev.com
+Email: contacto@codebylucio.dev
 GitHub: https://github.com/Migueluccio
 LinkedIn: https://linkedin.com/in/Migueluccio
 

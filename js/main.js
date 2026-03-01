@@ -7,6 +7,7 @@ const SELECTORS = {
   cards: ".card",
   skillBars: ".skill-bar__fill",
   copyEmail: "[data-copy-email]",
+  contactForm: "#contact-form",
   toast: ".toast",
   hero: ".hero",
   heroTagline: "#hero-tagline"
@@ -133,7 +134,7 @@ const showToast = (message) => {
 const initCopyEmail = () => {
   const button = document.querySelector(SELECTORS.copyEmail);
   if (!button) return;
-  const email = "mluccio@malrdev.com";
+  const email = "contacto@codebylucio.dev";
   button.addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText(email);
@@ -206,6 +207,47 @@ const initScrollSpy = () => {
   });
 };
 
+const initContactForm = () => {
+  const form = document.querySelector(SELECTORS.contactForm);
+  if (!form) return;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form));
+    if (!data.name?.trim() || !data.email?.trim() || !data.subject?.trim() || !data.message?.trim()) {
+      showToast(document.body.dataset.toastValidation || "Por favor completa todos los campos.");
+      return;
+    }
+
+    const submitBtn = form.querySelector(".form__submit");
+    const submitText = form.querySelector(".form__submit-text");
+    const originalText = submitText.textContent;
+
+    submitBtn.disabled = true;
+    submitText.textContent = document.body.dataset.toastSending || "Enviando...";
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const json = await res.json();
+      if (json.success) {
+        form.reset();
+        showToast(document.body.dataset.toastSuccess || "¡Mensaje enviado!");
+      } else {
+        showToast(document.body.dataset.toastError || "Error al enviar. Intenta de nuevo.");
+      }
+    } catch {
+      showToast(document.body.dataset.toastError || "Error al enviar. Intenta de nuevo.");
+    } finally {
+      submitBtn.disabled = false;
+      submitText.textContent = originalText;
+    }
+  });
+};
+
 const registerServiceWorker = () => {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/sw.js").catch(() => {});
@@ -219,6 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initIntersectionAnimations();
   initSkillBars();
   initCopyEmail();
+  initContactForm();
   initTyping();
   initParallax();
   initScrollSpy();

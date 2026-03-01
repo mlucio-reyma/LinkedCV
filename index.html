@@ -11,6 +11,8 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="Miguel Angel Lucio Reyes">
   <meta name="theme-color" content="#0f172a">
+  <!-- Google Search Console: replace content value with your verification code from GSC dashboard -->
+  <meta name="google-site-verification" content="PLACEHOLDER_REPLACE_WITH_GSC_CODE">
   <link rel="canonical" href="https://linkedcv.codebylucio.dev/">
   <link rel="alternate" hreflang="es" href="https://linkedcv.codebylucio.dev/?lang=es">
   <link rel="alternate" hreflang="en" href="https://linkedcv.codebylucio.dev/?lang=en">
@@ -21,6 +23,7 @@
   <meta property="og:description" content="Miguel Angel Lucio Reyes - Full Stack Developer en León, México. 6+ años de experiencia en Microsoft, IBM y Softtek con .NET, React y Azure.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://linkedcv.codebylucio.dev/">
+  <!-- Profile photo: swap profile.svg → profile.jpg below once a real photo is available -->
   <meta property="og:image" content="https://linkedcv.codebylucio.dev/assets/images/profile.svg">
   <meta property="og:image:alt" content="Miguel Angel Lucio Reyes - Full Stack Developer">
   <meta property="og:image:type" content="image/svg+xml">
@@ -59,7 +62,7 @@
     "jobTitle": "Senior Full Stack Developer",
     "description": "Full Stack Developer con 6+ años de experiencia en Microsoft, IBM y Softtek, especializado en .NET, React y arquitecturas cloud",
     "url": "https://linkedcv.codebylucio.dev/",
-    "email": "mluccio@malrdev.com",
+    "email": "contacto@codebylucio.dev",
     "telephone": "+52-XXX-XXX-XXXX",
     "image": "https://linkedcv.codebylucio.dev/assets/images/profile.svg",
     "sameAs": [
@@ -127,7 +130,7 @@
   }
   </script>
 </head>
-<body>
+<body data-i18n-attr="data-toast-validation:contact.formValidation|data-toast-success:contact.formSuccess|data-toast-error:contact.formError|data-toast-sending:contact.formSending">
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido principal</a>
 
   <header class="header" role="banner">
@@ -664,7 +667,7 @@
         <article class="card contact__details">
           <div class="contact__item">
             <span data-i18n="contact.emailLabel">Email</span>
-            <a href="mailto:mluccio@malrdev.com">mluccio@malrdev.com</a>
+            <a href="mailto:contacto@codebylucio.dev">contacto@codebylucio.dev</a>
           </div>
           <div class="contact__item">
             <span data-i18n="contact.socialLabel">Redes</span>
@@ -677,6 +680,34 @@
             <span data-i18n="contact.locationLabel">Ubicación</span>
             <span data-i18n="contact.location">León, México</span>
           </div>
+        </article>
+        <article class="card contact__form-card">
+          <h3 data-i18n="contact.formTitle">Envíame un mensaje</h3>
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form__group">
+              <label class="form__label" for="form-name" data-i18n="contact.formName">Nombre</label>
+              <input class="form__input" id="form-name" name="name" type="text" required
+                     data-i18n-attr="placeholder:contact.formNamePlaceholder">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="form-email" data-i18n="contact.formEmail">Correo electrónico</label>
+              <input class="form__input" id="form-email" name="email" type="email" required
+                     data-i18n-attr="placeholder:contact.formEmailPlaceholder">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="form-subject" data-i18n="contact.formSubject">Asunto</label>
+              <input class="form__input" id="form-subject" name="subject" type="text" required
+                     data-i18n-attr="placeholder:contact.formSubjectPlaceholder">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="form-message" data-i18n="contact.formMessage">Mensaje</label>
+              <textarea class="form__input form__textarea" id="form-message" name="message" rows="4" required
+                        data-i18n-attr="placeholder:contact.formMessagePlaceholder"></textarea>
+            </div>
+            <button class="btn btn--primary form__submit" type="submit">
+              <span class="form__submit-text" data-i18n="contact.formSubmit">Enviar mensaje</span>
+            </button>
+          </form>
         </article>
       </div>
       <footer class="footer">

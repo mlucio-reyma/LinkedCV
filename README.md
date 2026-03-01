@@ -481,6 +481,6 @@ Copyright © 2026 Miguel Angel Lucio Reyes
 
 **Hecho con ❤️ por [Miguel Angel Lucio Reyes](https://github.com/mlucio-reyma)**
 
-[🌐 Ver Demo](https://linkedcv.codebylucio.dev/) • [📧 Contacto](mailto:mluccio@malrdev.com) • [💼 LinkedIn](https://linkedin.com/in/Migueluccio)
+[🌐 Ver Demo](https://linkedcv.codebylucio.dev/) • [📧 Contacto](mailto:contacto@codebylucio.dev) • [💼 LinkedIn](https://linkedin.com/in/Migueluccio)
 
 </div>

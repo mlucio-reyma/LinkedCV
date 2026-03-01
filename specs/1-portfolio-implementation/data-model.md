@@ -70,7 +70,7 @@ LinkedCV is a static portfolio website. Data is purely content-based (no databas
     "social_links": [
       { "name": "GitHub", "url": "https://github.com/Migueluccio", "icon": "assets/icons/github.svg" },
       { "name": "LinkedIn", "url": "https://linkedin.com/in/Migueluccio", "icon": "assets/icons/linkedin.svg" },
-      { "name": "Email", "url": "mailto:mluccio@malrdev.com", "action": "copy_to_clipboard", "icon": "✉️" }
+      { "name": "Email", "url": "mailto:contacto@codebylucio.dev", "action": "copy_to_clipboard", "icon": "✉️" }
     ]
   }
 }
@@ -591,7 +591,7 @@ LinkedCV is a static portfolio website. Data is purely content-based (no databas
 
 | Field | Type | Required | Constraints | Notes |
 |-------|------|----------|-------------|-------|
-| `email` | String | YES | Valid email format | "mluccio@malrdev.com" (with copy-to-clipboard) |
+| `email` | String | YES | Valid email format | "contacto@codebylucio.dev" (with copy-to-clipboard) |
 | `social_links` | Array[Object] | NO | 2+ links | GitHub, LinkedIn, Twitter, etc. |
 | `cta_secondary` | Object | YES | Download CV button | Secondary download link (same as hero) |
 | `footer_tagline` | String | NO | Max 200 chars | Optional footer message (e.g., "Open to opportunities") |
@@ -612,7 +612,7 @@ LinkedCV is a static portfolio website. Data is purely content-based (no databas
 ```json
 {
   "contact": {
-    "email": "mluccio@malrdev.com",
+    "email": "contacto@codebylucio.dev",
     "social_links": [
       { "name": "GitHub", "url": "https://github.com/Migueluccio", "icon": "assets/icons/github.svg" },
       { "name": "LinkedIn", "url": "https://linkedin.com/in/Migueluccio", "icon": "assets/icons/linkedin.svg" }

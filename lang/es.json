@@ -154,7 +154,21 @@
     "emailLabel": "Email",
     "socialLabel": "Redes",
     "locationLabel": "Ubicación",
-    "location": "León, México"
+    "location": "León, México",
+    "formTitle": "Envíame un mensaje",
+    "formName": "Nombre",
+    "formNamePlaceholder": "Tu nombre completo",
+    "formEmail": "Correo electrónico",
+    "formEmailPlaceholder": "tu@correo.com",
+    "formSubject": "Asunto",
+    "formSubjectPlaceholder": "¿En qué puedo ayudarte?",
+    "formMessage": "Mensaje",
+    "formMessagePlaceholder": "Cuéntame sobre tu proyecto...",
+    "formSubmit": "Enviar mensaje",
+    "formSending": "Enviando...",
+    "formSuccess": "¡Mensaje enviado! Te responderé pronto.",
+    "formError": "Error al enviar. Por favor intenta de nuevo.",
+    "formValidation": "Por favor completa todos los campos."
   },
   "footer": {
     "tagline": "Creando experiencias digitales con impacto."

@@ -993,7 +993,7 @@ Lighthouse ≥90 all categories; WCAG 2.1 AA checks pass; FCP/LCP/CLS within lim
 - **Description**: Implement email copy functionality
 - **File**: js/main.js (email handler)
 - **Acceptance Criteria**:
-  - Click email button → copy "mluccio@malrdev.com" to clipboard
+  - Click email button → copy "contacto@codebylucio.dev" to clipboard
   - Show success message or toast (e.g., "Copied!")
   - Fallback: select text if clipboard API unavailable
   - Toast disappears after 3 seconds

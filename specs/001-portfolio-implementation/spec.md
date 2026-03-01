@@ -82,7 +82,7 @@ Each section adds core value and can be deployed independently.
 4. **Given** Education section displays, **When** user views, **Then** Computer Systems Engineering degree shows (Universidad Tecnológica de León, 2017, Honors Mention, GPA 9.2/10); 4 certifications display with icons (Azure Developer Associate, Azure Fundamentals, AWS Cloud Practitioner, Scrum Master, ITIL Foundation)
 5. **Given** Achievements section loads, **When** user scrolls, **Then** displays 4-5 achievements (Outstanding Performance Award Microsoft 2023, Employee of Quarter IBM 2020, Open Source: 500+ contributions, Tech Speaker: 2 conferences, Mentored: 50+ developers); metrics highlighted with accent colors (cyan, electric blue)
 6. **Given** Projects section loads, **When** user hovers over project card, **Then** card reveals additional details (description, tech stack, GitHub link, demo link); links open in new tabs
-7. **Given** Contact section visible, **When** user sees footer, **Then** email "mluccio@malrdev.com" displays with copy-to-clipboard icon; GitHub and LinkedIn links with brand-color icons; secondary "Download CV" button visible
+7. **Given** Contact section visible, **When** user sees footer, **Then** email "contacto@codebylucio.dev" displays with copy-to-clipboard icon; GitHub and LinkedIn links with brand-color icons; secondary "Download CV" button visible
 8. **Given** user navigates all sections, **When** user toggles language from ES to EN, **Then** ALL content in all 8 sections updates simultaneously in <200ms; dates format respected per language (Spanish: 12/02/2026, English: 02/12/2026)
 
 ---
@@ -114,7 +114,7 @@ or WebPageTest.com; should be <1.5s and <2.5s respectively.
 1. **Given** Lighthouse audit runs, **When** test completes, **Then** Performance score ≥90, Accessibility score ≥90, Best Practices score ≥90, SEO score ≥90
 2. **Given** page loads, **When** user views in mobile DevTools (375px width), **Then** layout adapts: hamburger menu shows, cards stack vertically, text remains readable (no overflow)
 3. **Given** user presses Tab key, **When** navigating site, **Then** all interactive elements (nav links, buttons, email mailto, social links) receive visible focus ring; focus order is logical (top to bottom, left to right)
-4. **Given** screen reader enabled, **When** user navigates, **Then** headings announced (H1: Miguel Angel Lucio Reyes, H2: About, Experience, etc.); lists structure preserved; links have descriptive text ("Download CV" not just "link"); buttons labeled ("Send Email to mluccio@malrdev.com")
+4. **Given** screen reader enabled, **When** user navigates, **Then** headings announced (H1: Miguel Angel Lucio Reyes, H2: About, Experience, etc.); lists structure preserved; links have descriptive text ("Download CV" not just "link"); buttons labeled ("Send Email to contacto@codebylucio.dev")
 5. **Given** user opens site on Chrome, **When** DevTools Performance tab records, **Then** First Contentful Paint <1.5s, Largest Contentful Paint <2.5s, Cumulative Layout Shift <0.1
 6. **Given** page fully loaded, **When** user disables network in DevTools, **Then** user refreshes page; content still displays (text, layout); images may not load but page remains usable
 7. **Given** user opens site on Chrome, Firefox, Safari, Edge, **When** user views each section, **Then** visual appearance consistent across browsers; animations smooth; no console errors; links work identically
@@ -125,7 +125,7 @@ or WebPageTest.com; should be <1.5s and <2.5s respectively.
 
 - **Language switching with slow network**: What if EN translations load slowly? → Debounce language switch, show loading indicator, prevent double-switching
 - **Very long job titles or company names**: What if name breaks layout? → Use CSS text-truncation with ellipsis (…) or responsive font sizing
-- **Missing PDF files**: What if CV_ES.pdf or CV_EN.pdf not accessible? → Display user-friendly error message ("PDF not available, contact mluccio@malrdev.com") instead of broken link
+- **Missing PDF files**: What if CV_ES.pdf or CV_EN.pdf not accessible? → Display user-friendly error message ("PDF not available, contact contacto@codebylucio.dev") instead of broken link
 - **User's browser doesn't support localStorage**: What if localStorage unavailable? → Fall back to session-based language (resets on page reload) or use CSS media query (prefers-color-scheme)
 - **Project screenshot images fail to load**: What if images 404? → Show placeholder with project name; display alt text; links still functional
 - **Print layout for PDF export**: What if user prints page? → Print-specific CSS hides nav, adjusts margins, removes animations, optimizes for paper format
@@ -140,7 +140,7 @@ or WebPageTest.com; should be <1.5s and <2.5s respectively.
 - **FR-002**: Hero section MUST include: profile photo (circular, optimized), full name (Miguel Angel Lucio Reyes) with gradient text effect, professional title (Full Stack Developer), compelling tagline with typing animation, social buttons (GitHub, LinkedIn), "Download CV" button, language toggle (🇪🇸 🇬🇧)
 - **FR-003**: ALL user-facing content MUST exist in Spanish (ES, default) and English (EN); language switching MUST be instant (<200ms) without page reload
 - **FR-004**: Users MUST be able to download CV as PDF matching selected language (CV_ES.pdf if ES selected, CV_EN.pdf if EN selected); download buttons in hero and contact sections
-- **FR-005**: Site MUST include functional links to GitHub (github.com/Migueluccio), LinkedIn (linkedin.com/in/Migueluccio), and email (mluccio@malrdev.com) with copy-to-clipboard for email
+- **FR-005**: Site MUST include functional links to GitHub (github.com/Migueluccio), LinkedIn (linkedin.com/in/Migueluccio), and email (contacto@codebylucio.dev) with copy-to-clipboard for email
 - **FR-006**: Navigation MUST be smooth scrolling between sections (no hard page jumps); hamburger menu on mobile (<768px); nav links accessible via keyboard and mouse
 - **FR-007**: Work Experience section MUST display 3 companies (Microsoft, IBM, Softtek) with job titles, dates, 2-3 key achievements per role, tech stack tags; visual timeline layout with gradient line
 - **FR-008**: Skills section MUST display categorized skills (Frontend, Backend, DevOps, Other) with animated progress bars filling on scroll; proficiency levels indicated (Expert/Advanced/Intermediate)
