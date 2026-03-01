@@ -7,7 +7,7 @@ const ASSETS = [
   "/js/i18n.js?v=BUILD_VERSION",
   "/lang/es.json",
   "/lang/en.json",
-  "/assets/images/profile.svg",
+  "/assets/images/profile.jpg",
   "/assets/images/project-shophub.svg",
   "/assets/images/project-taskmaster.svg",
   "/assets/images/project-connecthub.svg",
