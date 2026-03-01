@@ -8,4 +8,4 @@ Allow: /
 Disallow: /assets/docs/
 
 # Sitemap
-Sitemap: https://mlucio-reyma.github.io/LinkedCV/sitemap.xml
+Sitemap: https://linkedcv.codebylucio.dev/sitemap.xml

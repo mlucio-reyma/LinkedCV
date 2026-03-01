@@ -43,7 +43,7 @@
 - [x] SEO meta tags complete and optimized - ✅ Meta description with geolocation, keywords reorganized, canonical URLs updated
 - [x] Open Graph optimized for social sharing - ✅ og:type set to "profile", URLs updated to GitHub Pages, descriptions enhanced
 - [x] Schema.org structured data enhanced - ✅ hasCredential added with 4 professional certifications (Azure, AWS, Scrum, ITIL)
-- [x] URLs updated to deployment environment - ✅ All absolute URLs point to https://mlucio-reyma.github.io/LinkedCV/
+- [x] URLs updated to deployment environment - ✅ All absolute URLs point to https://linkedcv.codebylucio.dev/
 - [x] Sitemap and robots.txt aligned with deployment - ✅ Both files updated with correct GitHub Pages URLs
 
 ---

@@ -1731,7 +1731,7 @@ Lighthouse ≥90 all categories; WCAG 2.1 AA checks pass; FCP/LCP/CLS within lim
 - ✅ og:type updated to "profile" for personal branding
 
 **Latest Updates (2026-02-27)**:
-- URLs actualizadas a https://mlucio-reyma.github.io/LinkedCV/
+- URLs actualizadas a https://linkedcv.codebylucio.dev/
 - Añadidas certificaciones en Schema.org (Azure, AWS, Scrum, ITIL)
 - Meta description optimizada con ubicación (León, México)
 - Open Graph type cambiado a "profile" para mejor indexación de perfil profesional

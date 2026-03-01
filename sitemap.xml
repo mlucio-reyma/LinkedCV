@@ -4,75 +4,75 @@
   
   <!-- Página principal -->
   <url>
-    <loc>https://mlucio-reyma.github.io/LinkedCV/</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://linkedcv.codebylucio.dev/</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mlucio-reyma.github.io/LinkedCV/?lang=es" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mlucio-reyma.github.io/LinkedCV/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mlucio-reyma.github.io/LinkedCV/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://linkedcv.codebylucio.dev/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://linkedcv.codebylucio.dev/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://linkedcv.codebylucio.dev/" />
   </url>
   
   <!-- Sección Hero -->
   <url>
-    <loc>https://mlucio-reyma.github.io/LinkedCV/#hero</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://linkedcv.codebylucio.dev/#hero</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Sección Sobre Mí -->
   <url>
-    <loc>https://mlucio-reyma.github.io/LinkedCV/#about</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://linkedcv.codebylucio.dev/#about</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Sección Experiencia -->
   <url>
-    <loc>https://mlucio-reyma.github.io/LinkedCV/#experience</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://linkedcv.codebylucio.dev/#experience</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Sección Habilidades -->
   <url>
-    <loc>https://mlucio-reyma.github.io/LinkedCV/#skills</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://linkedcv.codebylucio.dev/#skills</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Sección Educación -->
   <url>
-    <loc>https://mlucio-reyma.github.io/LinkedCV/#education</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://linkedcv.codebylucio.dev/#education</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Sección Logros -->
   <url>
-    <loc>https://mlucio-reyma.github.io/LinkedCV/#achievements</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://linkedcv.codebylucio.dev/#achievements</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Sección Proyectos -->
   <url>
-    <loc>https://mlucio-reyma.github.io/LinkedCV/#projects</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://linkedcv.codebylucio.dev/#projects</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Sección Contacto -->
   <url>
-    <loc>https://mlucio-reyma.github.io/LinkedCV/#contact</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://linkedcv.codebylucio.dev/#contact</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

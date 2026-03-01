@@ -4,12 +4,12 @@
 
 ### Portafolio Profesional Estático | Bilingüe | SEO Optimizado | PWA Ready
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?style=for-the-badge&logo=github)](https://mlucio-reyma.github.io/LinkedCV/)
-[![SEO Score](https://img.shields.io/badge/SEO-100%2F100-brightgreen?style=for-the-badge&logo=google)](https://mlucio-reyma.github.io/LinkedCV/)
+[![Cloudflare](https://img.shields.io/badge/Cloudflare-Live-success?style=for-the-badge&logo=cloudflare)](https://linkedcv.codebylucio.dev/)
+[![SEO Score](https://img.shields.io/badge/SEO-100%2F100-brightgreen?style=for-the-badge&logo=google)](https://linkedcv.codebylucio.dev/)
 [![Lighthouse](https://img.shields.io/badge/Lighthouse-95%2B-blue?style=for-the-badge&logo=lighthouse)](#)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-**[🌐 Ver Demo](https://mlucio-reyma.github.io/LinkedCV/)** | **[📖 Documentación](#)** | **[🔧 Personalizar](#personalización-rápida)**
+**[🌐 Ver Demo](https://linkedcv.codebylucio.dev/)** | **[📖 Documentación](#)** | **[🔧 Personalizar](#personalización-rápida)**
 
 ---
 
@@ -96,7 +96,7 @@ graph LR
 | Frontend | SEO & PWA | Herramientas |
 |:--------:|:---------:|:------------:|
 | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | ![Schema](https://img.shields.io/badge/Schema.org-JSON--LD-orange?style=for-the-badge) | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
-| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | ![Open Graph](https://img.shields.io/badge/Open%20Graph-Meta-blue?style=for-the-badge) | ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222?style=for-the-badge&logo=github) |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | ![Open Graph](https://img.shields.io/badge/Open%20Graph-Meta-blue?style=for-the-badge) | ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white) |
 | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | ![PWA](https://img.shields.io/badge/PWA-Ready-5A0FC8?style=for-the-badge&logo=pwa) | ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white) |
 
 </div>
@@ -162,7 +162,7 @@ LinkedCV/
 <summary><b>📌 Click para ver todos los meta tags implementados</b></summary>
 
 - ✅ Title, description, author, keywords
-- ✅ Canonical URL: `https://mlucio-reyma.github.io/LinkedCV/`
+- ✅ Canonical URL: `https://linkedcv.codebylucio.dev/`
 - ✅ hreflang (ES/EN/x-default) para SEO internacional
 - ✅ Open Graph completo con URLs absolutas
 - ✅ Twitter Cards con metadata completa
@@ -239,6 +239,7 @@ LinkedCV/
 | Fecha | Actualización |
 |:-----:|--------------|
 | 27-Feb-2026 | ✅ URLs migradas a GitHub Pages |
+| 01-Mar-2026 | ✅ Migración a Cloudflare con dominio propio (linkedcv.codebylucio.dev) |
 | 27-Feb-2026 | ✅ Certificaciones añadidas en JSON-LD |
 | 27-Feb-2026 | ✅ Meta description con geolocalización |
 | 27-Feb-2026 | ✅ Open Graph type actualizado a "profile" |
@@ -281,7 +282,7 @@ npx http-server
 
 ---
 
-## 🌐 Despliegue en GitHub Pages
+## 🌐 Despliegue en Cloudflare
 
 <div align="center">
 
@@ -289,8 +290,8 @@ npx http-server
 graph TD
     A[📝 Push a main branch] --> B[⚙️ GitHub Actions]
     B --> C[🔨 Build]
-    C --> D[🚀 Deploy to Pages]
-    D --> E[✅ Live on mlucio-reyma.github.io/LinkedCV]
+    C --> D[🚀 Deploy to Cloudflare Pages]
+    D --> E[✅ Live on linkedcv.codebylucio.dev]
 ```
 
 </div>
@@ -304,14 +305,10 @@ graph TD
    git push -u origin main
    ```
 
-2. **Activa GitHub Pages**
-   - Ve a **Settings** → **Pages**
-   - Source: **Deploy from branch**
-   - Branch: **`main`** → **`/ (root)`**
-   - Click **Save**
+2. **Cloudflare Pages** se encarga del deploy automático al hacer push.
 
 3. **Verifica el despliegue**
-   - URL: `https://mlucio-reyma.github.io/LinkedCV/`
+   - URL: `https://linkedcv.codebylucio.dev/`
    - El sitio estará disponible en ~2 minutos
 
 ---
@@ -484,6 +481,6 @@ Copyright © 2026 Miguel Angel Lucio Reyes
 
 **Hecho con ❤️ por [Miguel Angel Lucio Reyes](https://github.com/mlucio-reyma)**
 
-[🌐 Ver Demo](https://mlucio-reyma.github.io/LinkedCV/) • [📧 Contacto](mailto:mluccio@malrdev.com) • [💼 LinkedIn](https://linkedin.com/in/Migueluccio)
+[🌐 Ver Demo](https://linkedcv.codebylucio.dev/) • [📧 Contacto](mailto:mluccio@malrdev.com) • [💼 LinkedIn](https://linkedin.com/in/Migueluccio)
 
 </div>
