@@ -1,10 +1,10 @@
-const CACHE_NAME = "linkedcv-v3";
+const CACHE_NAME = "linkedcv-BUILD_VERSION";
 const ASSETS = [
   "/",
   "/index.html",
-  "/css/styles.css",
-  "/js/main.js",
-  "/js/i18n.js",
+  "/css/styles.css?v=BUILD_VERSION",
+  "/js/main.js?v=BUILD_VERSION",
+  "/js/i18n.js?v=BUILD_VERSION",
   "/lang/es.json",
   "/lang/en.json",
   "/assets/images/profile.svg",
