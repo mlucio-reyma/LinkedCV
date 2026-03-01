@@ -48,7 +48,7 @@
 - ✅ 8 secciones completas
 - ✅ Animaciones suaves
 - ✅ Mobile-first responsive
-- ✅ Diseño moderno y profesional
+- ✅ **Dark / Light mode** con persistencia
 
 </td>
 </tr>
@@ -66,9 +66,9 @@
 
 ### ⚙️ Tecnología
 - ✅ Vanilla JavaScript (sin frameworks)
-- ✅ PWA Ready (Service Worker)
+- ✅ PWA · SW Stale-While-Revalidate
 - ✅ Accesibilidad WCAG 2.1 AA
-- ✅ Sin dependencias externas
+- ✅ Analytics · Cloudflare Web Analytics
 
 </td>
 </tr>
@@ -232,18 +232,23 @@ LinkedCV/
 </tr>
 </table>
 
-### 🆕 Últimas Actualizaciones SEO
+### 🆕 Últimas Actualizaciones
 
 <div align="center">
 
-| Fecha | Actualización |
-|:-----:|--------------|
-| 27-Feb-2026 | ✅ URLs migradas a GitHub Pages |
-| 01-Mar-2026 | ✅ Migración a Cloudflare con dominio propio (linkedcv.codebylucio.dev) |
-| 27-Feb-2026 | ✅ Certificaciones añadidas en JSON-LD |
-| 27-Feb-2026 | ✅ Meta description con geolocalización |
-| 27-Feb-2026 | ✅ Open Graph type actualizado a "profile" |
-| 27-Feb-2026 | ✅ Keywords reorganizadas por relevancia |
+| Fecha | Versión | Actualización |
+|:-----:|:-------:|--------------|
+| 27-Feb-2026 | v1.x | ✅ URLs migradas a GitHub Pages |
+| 01-Mar-2026 | v1.x | ✅ Migración a Cloudflare con dominio propio (linkedcv.codebylucio.dev) |
+| 01-Mar-2026 | v2.0 | ✅ Formulario de contacto (Cloudflare Function + Resend API) |
+| 01-Mar-2026 | v2.0 | ✅ Foto de perfil real integrada en hero |
+| 01-Mar-2026 | v2.0 | ✅ Google Search Console verificado |
+| 01-Mar-2026 | v2.0 | ✅ Auto-versionado SW cache via `build.js` + `CF_PAGES_COMMIT_SHA` |
+| 01-Mar-2026 | v2.1 | ✅ Cloudflare Web Analytics integrado |
+| 01-Mar-2026 | v2.2 | ✅ Dark / Light theme toggle con persistencia (anti-FOUC) |
+| 01-Mar-2026 | v2.2 | ✅ Service Worker actualizado a stale-while-revalidate |
+| 01-Mar-2026 | v2.2 | ✅ Hero redesignado: imagen circular a pantalla completa |
+| 01-Mar-2026 | v2.2 | ✅ Botón "Copiar correo" reubicado inline junto al email |
 
 </div>
 
@@ -455,6 +460,45 @@ Consulta [SEO-CHECKLIST.md](SEO-CHECKLIST.md) para la lista completa de todas la
 | Android | Chrome 90+ | ✅ |
 
 </div>
+
+---
+
+## 🗺️ Roadmap de Versiones
+
+<div align="center">
+
+| Versión | Descripción | Estado |
+|:-------:|-------------|:------:|
+| **v2.0** | Formulario de contacto · Foto real · Google Search Console · Auto-cache versioning | ✅ Completado |
+| **v2.1** | Cloudflare Web Analytics · Foto de perfil en hero | ✅ Completado |
+| **v2.2** | Dark/Light toggle · SW Stale-While-Revalidate · Hero redesign | ✅ Completado |
+| **v2.3** | Blog técnico con 2-3 artículos | 🔲 Pendiente |
+
+</div>
+
+### v2.2 — Detalles de implementación
+
+<details>
+<summary><b>🎨 Dark / Light Theme Toggle</b></summary>
+
+- Script anti-FOUC en `<head>` antes del CSS: aplica el tema antes del primer render
+- Botón toggle en el `<nav>` con icono ☀️ / 🌙
+- Persiste en `localStorage` (`linkedcv-theme`)
+- Respeta `prefers-color-scheme` del sistema operativo en primera visita
+- Variables CSS completas para tema claro en `[data-theme="light"]`
+- Overrides manuales para elementos con colores hardcodeados (tags, gradientes, SVGs)
+
+</details>
+
+<details>
+<summary><b>⚡ Service Worker Stale-While-Revalidate</b></summary>
+
+- Antes: cache-first (usuario podía ver contenido obsoleto)
+- Ahora: si hay caché se sirve inmediatamente **y** se actualiza en background
+- Próximo reload = contenido fresco, sin esperar
+- Cache auto-versionado en cada deploy via `build.js` + `CF_PAGES_COMMIT_SHA`
+
+</details>
 
 ---
 

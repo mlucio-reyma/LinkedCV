@@ -8,6 +8,7 @@ const SELECTORS = {
   skillBars: ".skill-bar__fill",
   copyEmail: "[data-copy-email]",
   contactForm: "#contact-form",
+  themeToggle: ".theme-toggle",
   toast: ".toast",
   hero: ".hero",
   heroTagline: "#hero-tagline"
@@ -248,6 +249,26 @@ const initContactForm = () => {
   });
 };
 
+const applyTheme = (theme, btn) => {
+  document.documentElement.dataset.theme = theme;
+  const icon = btn.querySelector(".theme-toggle__icon");
+  if (icon) icon.textContent = theme === "dark" ? "☀️" : "🌙";
+  btn.setAttribute("aria-label",
+    theme === "dark" ? "Activar modo claro" : "Activar modo oscuro");
+};
+
+const initThemeToggle = () => {
+  const btn = document.querySelector(SELECTORS.themeToggle);
+  if (!btn) return;
+  const current = document.documentElement.dataset.theme || "dark";
+  applyTheme(current, btn);
+  btn.addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    applyTheme(next, btn);
+    localStorage.setItem("linkedcv-theme", next);
+  });
+};
+
 const registerServiceWorker = () => {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/sw.js").catch(() => {});
@@ -265,5 +286,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initTyping();
   initParallax();
   initScrollSpy();
+  initThemeToggle();
   registerServiceWorker();
 });

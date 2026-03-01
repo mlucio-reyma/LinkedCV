@@ -18,7 +18,9 @@
     "education": "Educación",
     "achievements": "Logros",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "themeDark": "Activar modo claro",
+    "themeLight": "Activar modo oscuro"
   },
   "hero": {
     "eyebrow": "Hola, soy",

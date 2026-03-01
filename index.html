@@ -49,6 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   
+  <script>(function(){var t=localStorage.getItem("linkedcv-theme"),p=window.matchMedia("(prefers-color-scheme:dark)").matches;document.documentElement.dataset.theme=t||(p?"dark":"light");})();</script>
   <link rel="stylesheet" href="css/styles.css?v=BUILD_VERSION">
 
   <!-- Schema.org JSON-LD -->
@@ -153,6 +154,9 @@
         <li><a class="nav__link" href="#projects" data-i18n="nav.projects">Proyectos</a></li>
         <li><a class="nav__link" href="#contact" data-i18n="nav.contact">Contacto</a></li>
       </ul>
+      <button class="theme-toggle" type="button" aria-label="Activar modo claro" data-action="toggle-theme">
+        <span class="theme-toggle__icon" aria-hidden="true">☀️</span>
+      </button>
       <button class="lang-toggle" type="button" aria-label="Cambiar idioma" data-action="toggle-language" data-i18n-attr="aria-label:a11y.toggleLanguage">
         <span class="lang-toggle__flag" aria-hidden="true">🇪🇸</span>
         <span class="lang-toggle__text">ES</span>
@@ -658,15 +662,20 @@
             <a class="btn btn--primary" data-download-cv href="assets/docs/CV_ES.pdf" download>
               <span data-i18n="contact.downloadCV">Descargar CV</span>
             </a>
-            <button class="btn btn--ghost" type="button" data-copy-email data-i18n-attr="aria-label:a11y.copyEmail">
-              <span data-i18n="contact.copyEmail">Copiar correo</span>
-            </button>
           </div>
         </article>
         <article class="card contact__details">
           <div class="contact__item">
             <span data-i18n="contact.emailLabel">Email</span>
-            <a href="mailto:contacto@codebylucio.dev">contacto@codebylucio.dev</a>
+            <div class="contact__email-row">
+              <a href="mailto:contacto@codebylucio.dev">contacto@codebylucio.dev</a>
+              <button class="btn--copy-email" type="button" data-copy-email data-i18n-attr="aria-label:a11y.copyEmail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
           </div>
           <div class="contact__item">
             <span data-i18n="contact.socialLabel">Redes</span>

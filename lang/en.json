@@ -18,7 +18,9 @@
     "education": "Education",
     "achievements": "Achievements",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "themeDark": "Switch to light mode",
+    "themeLight": "Switch to dark mode"
   },
   "hero": {
     "eyebrow": "Hello, I'm",
