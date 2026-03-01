@@ -1,4 +1,4 @@
-const CACHE_NAME = "linkedcv-v2";
+const CACHE_NAME = "linkedcv-v3";
 const ASSETS = [
   "/",
   "/index.html",
